@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+	<!-- 웹문서의 버전을 브라우저에게 선언함.(html5 버전) -->
+<html>
+ <head>
+ <meta charset="UTF-8">
+	<title> HTML 첫날 </title>
+ </head>
+
+ <body>
+<hr>
+	&lt;!-- 주석 태그 --&gt;
+	<!-- 주석태그입니다. 브라우저에는 안 나와요. -->
+
+	<h1>예약어 관련 특수문자 태그들</h1>
+	<p>
+	 &lt; = &amp;lt;	<br>
+	 &gt; = &amp;gt;	<br>
+	 &amp; = &amp;amp;	<br>
+	 &nbsp;= &amp;nbsp;(공백)<br>
+	</p>
+<hr><!-- ............................................................................... -->
+	<h1>기타 특수문자 태그들</h1>
+<pre>
+  &copy; = &amp;copy;
+ &trade; = &amp;trade;
+ &reg; = &amp;reg;
+</pre>
+ 
+<hr><!-- ............................................................................... -->
+	<h1>List - 목록 만들기</h1>
+
+	<h2>목록의 종류</h2>
+	<p>
+	 1. 순서가 없는 목록	- ul<br>
+	 2. 순서가 있는 목록	- ol<br>
+	 3. 정의 목록		- bl
+	</p>
+<!-- ............................................................................... -->
+	<h3>1. 순서가 없는 목록 - ul (Unordered List)</h3>
+	 <ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>Javascript</li>
+	 </ul>
+	 <ul>
+		<li>WEB</li>
+		<li>JSP</li>
+		<li>JAVA</li>
+		<li>JOB_BASIC</li>
+	 </ul>
+
+	<h5>문제. 5가지 메뉴를 순서 없는 목록으로 만들기</h5>
+	 <ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Cocoa</li>
+		<li>Milk</li>
+		<li>Juice</li>
+	 </ul>
+<!-- ............................................................................... -->	
+	<h3>2. 순서가 있는 목록 - ol (Ordered List)</h3>
+	 <ol>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>Javascript</li>
+	 </ol>
+	 <ol>
+		<li>Tag</li>
+		<li>속성</li>
+		<li>속성값</li>
+	 </ol>
+
+	<h5>문제. 추천하고 싶은 영화 5가지를 순서 있는 목록으로 만들기</h5>
+	 <ol>
+		<li>명량</li>
+		<li>극한직업</li>
+		<li>국제시장</li>
+		<li>베테랑</li>
+		<li>택시운전사</li>
+	 </ol>
+
+<hr><!-- ............................................................................... -->
+	<h2>목록 앞의 모양 바꾸기 - type</h2>
+	 <ul>
+		<li>ul type="<b>disc</b>/circle/square"</li>
+		<li>ol type="<b>1</b>/a/A/i/I"</li>
+	 </ul>
+<hr>
+	 <ul type="disc">
+		<li>HTML <mark>(type="disc")</mark></li>
+		<li>CSS</li>
+		<li>Javascript</li>
+	 </ul>
+	 <ul type="circle">
+		<li>HTML <mark>(type="circle")</mark></li>
+		<li>CSS</li>
+		<li>Javascript</li>
+	 </ul>
+	 <ul type="square">
+		<li>HTML <mark>(type="square")</mark></li>
+		<li>CSS</li>
+		<li>Javascript</li>
+	 </ul>
+<hr>
+	 <ol type="a">
+		<li>Coffee <i>(type="a")</i></li>
+		<li>Tea</li>
+		<li>Cocoa</li>
+		<li>Milk</li>
+		<li>Juice</li>
+	 </ol>
+	 <ol type="A">
+		<li>Coffee <i>(type="A")</i></li>
+		<li>Tea</li>
+		<li>Cocoa</li>
+		<li>Milk</li>
+		<li>Juice</li>
+	 </ol>
+	 <ol type="i">
+		<li>Coffee <i>(type="i")</i></li>
+		<li>Tea</li>
+		<li>Cocoa</li>
+		<li>Milk</li>
+		<li>Juice</li>
+	 </ol>
+	 <ol type="I">
+		<li>Coffee <i>(type="I")</i></li>
+		<li>Tea</li>
+		<li>Cocoa</li>
+		<li>Milk</li>
+		<li>Juice</li>
+	 </ol>
+<hr><!-- ............................................................................... -->
+	<h3>3. 정의 목록 - dl (Description List)</h3>
+	 <dl>
+		<dt>HTML</dt>
+		<dd>Hyper Text Markup Language의 약자.</dd>
+	 </dl>
+	 <dl>
+		<dt>정의 목록 - dl ?</dt>
+		<dd>대상을 정의 내릴 때 사용하는 목록</dd>
+	 </dl>
+	 <dl>
+		<dt>HTML</dt>
+		<dd>웹페이지의 구조를 잡아준다.</dd>
+		<dt>CSS</dt>
+		<dd>웹페이지의 디자인을 잡아준다.</dd>
+		<dt>JS</dt>
+		<dd>웹페이지의 동적인 효과를 준다.</dd>
+	 </dl>
+
+	<h5>문제. 자신을 정의하는 목록 만들기</h5>
+	 <dl>
+		<dt>이승하</dt>
+		<dd>부산광역시 동래구 사직동</dd>
+		<dd>010-1234-5678</dd>
+		<dd>아이티윌 교육생</dd>
+	 </dl>
+<hr><!-- ............................................................................... -->
+	<h2>하위 목록 만들기</h2>
+	 <ul>
+		<li>관광지
+			<ul>
+			 <li>자연</li>
+			 <li>도보</li>
+			 <li>문화관광</li>
+			</ul>
+		</li>
+		<li>음식점
+			<ul>
+			 <li>한식</li>
+			 <li>양식</li>
+			 <li>중식</li>
+			 <li>일식</li>
+			</ul>
+		</li>
+		<li>숙박</li>
+		<li>쇼핑
+			<ul>
+			 <li>전통시장</li>
+			 <li>면세점</li>
+			 <li>특산품</li>
+			</ul>
+		</li>
+	 </ul>
+ </body>
+</html>

@@ -1,0 +1,332 @@
+﻿<html>
+<head>
+	<title>table - 표 만들기</title>
+	<style type = "text/css">
+		table, th, td {border:1px solid #09a;}
+	</style>
+</head>
+
+<body>
+	<hr>
+	<h1>table</h1>
+	<h2>표 만들기</h2>
+
+	<ul>
+		<li>table ... /table 	표를 시작하고 닫음</li>
+		<li>tr ... /tr 		줄을 시작하고 닫음</li>
+		<li>th ... /th 		제목칸을 시작하고 닫음</li>
+		<li>td ... /td 		일반칸을 시작하고 닫음</li>
+	</ul>
+
+	<table>
+		<tr>
+			<th>tag</th>
+			<th>설명</th>
+		</tr>
+		<tr>
+			<td>table</td>
+			<td>표를 시작</td>			
+		</tr>
+		<tr>
+			<td>tr</td>
+			<td>줄을 시작</td>
+		</tr>
+		<tr>
+			<td>th</td>
+			<td>제목칸을 시작</td>
+		</tr>
+
+		<tr>
+			<td>td</td>
+			<td>일반칸을 시작</td>
+		</tr>
+	</table>
+<hr>
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+	</table>
+<hr>
+	<h5>문제. 2줄 4칸인 기본표 만들기</h5>
+	<table>
+		<tr>
+			<td>a</td>
+			<td>b</td>
+			<td>c</td>
+			<td>d</td>
+		</tr>
+		<tr>
+			<td>e</td>
+			<td>f</td>
+			<td>g</td>
+			<td>h</td>
+		</tr>
+	</table>
+<hr>
+	<h5>출석부1</h5>
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>출결</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>aaa</td>
+			<td>출석</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>bbb</td>
+			<td>결석</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>이승하</td>
+			<td>출석</td>
+		</tr>
+	</table>
+<hr>
+	<h5>출석부2</h5>
+	<table>
+		<tr>
+			<th>번호</th>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<th>이름</th>
+			<td>aaa</td>
+			<td>bbb</td>
+			<td>이승하</td>
+		</tr>
+		<tr>
+			<th>출결</th>
+			<td>출석</td>
+			<td>결석</td>
+			<td>출석</td>
+		</tr>
+	</table>
+<hr>
+	<h5>체온측정 결과표</h5>
+	<table>
+		<tr>
+			<th>이름</th>
+			<th>체온</th>
+		</tr>
+		<tr>
+			<td>aaa</td>
+			<td>36.7℃</td>
+		</tr>
+		<tr>
+			<td>bbb</td>
+			<td>37.9℃</td>
+		</tr>
+		<tr>
+			<td>이승하</td>
+			<td>36.5℃</td>
+		</tr>
+	</table>
+<hr>
+	<h2>셀(칸) 합치기</h2>
+	<ol>
+		<li>colspan="n" 가로 방향으로 n개 만큼 하나로 합치기</li>
+		<li>rowspan="n" 세로 방향으로 n개 만큼 하나로 합치기</li>
+	</ol>
+
+	<h3>1. colspan ="n" 가로 방향으로 합치기</h3>
+	<table>
+		<tr>
+			<th colspan="2">대상</th>
+			<th colspan="2">결과</th>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>aaa</td>
+			<td>36.7℃</td>
+			<td>O</td>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td>bbb</td>
+			<td>37.9℃</td>
+			<td>X</td>
+		</tr>		<tr>
+			<td>03</td>
+			<td>이승하</td>
+			<td>36.5℃</td>
+			<td>O</td>
+		</tr>
+	</table>
+<hr>
+	<table>
+		<tr>
+			<th colspan="3">체온</th>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>이승하</td>
+			<td>36.5℃</td>	
+		</tr>
+	</table>
+<hr>
+	<h5>문제. 가로방향으로 합친 표 만들기</h5>
+	<table>
+		<tr>
+			<th colspan="4">colspan</th>
+		</tr>
+		<tr>
+			<td colspan="2">aaaa</td>
+			<td colspan="2">bbbb</td>
+		</tr>
+		<tr>
+			<td>cc</td>
+			<td>dd</td>
+			<td>ee</td>
+			<td>ff</td>
+		</tr>
+		<tr>
+			<td colspan="3">ggg</td>
+			<td>hh</td>
+		</tr>
+		<tr>
+			<td>ii</td>
+			<td>jj</td>
+			<td>kk</td>
+			<td>ll</td>
+		</tr>
+	</table>
+<hr>
+	<table>
+		<tr>
+			<th>NAME</th>
+			<th colspan="2">Telephone</th>
+		</tr>
+		<tr>
+			<td>Mr.lee</td>
+			<td>051-123-4567</td>
+			<td>010-1234-5678</td>
+		</tr>
+		<tr>
+			<td>Mr.kim</td>
+			<td>051-987-6543</td>
+			<td>010-9876-5432</td>
+		</tr>
+	</table>
+<hr>
+	<h3>2. rowspan ="n" 세로 방향으로 합치기</h3>
+	<table>
+		<tr>
+			<th rowspan="2">	속<br>성		</th>
+			<td>			colspan		</td>
+			<th rowspan="2">	속<br>성<br>값	</th>
+			<td rowspan="2">	="n"		</td>
+		</tr>
+		<tr>
+			<td>			rowspan		</td>
+		</tr>
+	</table>
+<hr>
+	<table>
+		<tr>
+			<td>111</td>
+			<td rowspan="3">222</td>
+		</tr>
+		<tr>
+			<td>333</td>
+		</tr>
+		<tr>
+			<td>444</td>
+		</tr>
+	</table>
+<hr>
+	<h5>문제. 세로방향으로 합친 표 만들기</h5>
+	<table>
+		<tr>
+			<th rowspan="4">체<br>온<br>표</th>
+			<th>번호</th>
+			<th>체온</th>
+			<th>서명</th>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>고온</td>
+			<td rowspan="3"></td>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td rowspan="2">정상</td>
+		</tr>
+		<tr>
+			<td>03</td>
+		</tr>
+	</table>
+<hr>
+	<h5>문제. 가로, 세로방향으로 복합적으로 합친 표 만들기</h5>
+	<table>
+		<tr>
+			<th colspan="4">체온표</th>
+		</tr>
+		<tr>
+			<th rowspan="2">이<br>름</th>
+			<td>이승하</td>
+			<th rowspan="2">체<br>온</th>
+			<td>36.5℃</td>
+		</tr>
+		<tr>
+			<td>가나다</td>
+			<td>37.9℃</td>
+		</tr>
+		<tr>
+			<th>서명</th>
+			<td colspan="3"></td>
+		</tr>
+	</table>
+<hr>
+	<table>
+		<tr>
+			<th colspan="4">아이티윌 게스트하우스 예약 안내</th>
+		</tr>
+		<tr>
+			<th>방 이름</th>
+			<th>대상</th>
+			<th>크기</th>
+			<th>가격</th>
+		</tr>
+		<tr>
+			<th>유채방</th>
+			<td>여성 도미토리</td>
+			<td rowspan="3">4인실</td>
+			<td rowspan="4">1인 20,000원</td>
+		</tr>
+		<tr>
+			<th rowspan="2">동백방</th>
+			<td>남성 도미토리</td>
+		</tr>
+		<tr>
+			<td>가족 1팀</td>
+		</tr>
+		<tr>
+			<th colspan="2">천혜향방</th>
+			<td>2인실</td>
+		</tr>
+		<tr>
+			<td colspan="4"> <b>바깥채 단독 : 전화문의</b> (010-777-5454)</td>
+		</tr>
+	</table>
+</body>
+</html>
