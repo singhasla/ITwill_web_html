@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form-1</title>
+</head>
+<body>
+	<h1>form</h1>
+	<p>
+		form은 사용자와 서버를 연결하는 페이지 부분을 구성한다.				<br>
+		사용자가 정보를 서버에 전달할 때 이용하는 다양한 형태의 폼 요소로 이루어진다.	<br>
+		- action 속성 : 정보를 전달 받을 서버측 파일을 지정.				<br>
+		- method 속성 : 정보 전달방식을 지정한다.(일반적으로 속성값은 post)	<br>
+	</p>
+		
+	<form action="test.jsp" method="post">
+		<label for="nm">name</label>		<input type="text" id="nm">		<br>
+		<label for="b-day">birthday</label>	<input type="text" id="b-day">	<br>
+		<input type="submit">
+	
+	
+		<h1>폼요소</h1>
+		
+			<h2>&ltinput type="text"&gt 한 줄 글상자(주관식)</h2>
+				<p>
+					input상자에 대한 설명 문구를 label태그로 표현한다. <br>
+					그리고 [label태그의 속성의 값]과 [input태그의 속성의 값]을 일치시켜주면 서로 연결된다. 	<br>
+				</p>
+				<label for="id">ID</label>	
+					<input type="text" id="id" maxlength="10"> 	<br>
+				<label for="pn">생년월일</label>	
+					<input type="text" id="pn" maxlength="6" minlength="6" size="13"> 	<br>
+				<ul>
+					<li>size="n"		상자의 길이</li>
+					<li>maxlength="n"	입력데이터의 최대길이</li>
+					<li>minlength="n"	입력데이터의 최소길이</li>
+				</ul>
+			
+			
+			<h2>&ltinput type="password"&gt 암호 글상자(주관식)</h2>
+				<label for="pw"> 비밀번호 </label>	<input type="password" id="pw"> 		<br>
+				<label> 주민번호 뒷자리 <input type="password" maxlength="7"> </label>
+				
+				
+			<h2>&lttextarea&gt ... &lt/textarea&gt 큰 글상자(주관식)</h2>
+				<p>
+					rows속성으로 상자의 줄을,			<br>
+					cols속성으로 가로 길이를 지정한다.	<br>
+				</p>
+				<textarea rows="7" cols="50">textarea 글상자</textarea>	<!-- 7줄*50자 = 총 350자 -->
+				<textarea rows="5" cols="20"></textarea>				<!-- 5줄*20자 = 총 100자 -->
+<hr>		
+<hr>		
+			<h2>&ltinput type="radio"&gt 단일 선택용 라디오버튼(객관식)</h2>
+				<p>
+					단일 선택이 되게 하려면, 같은 질문하의 라디오버튼 항목들끼리는
+					name속성의 값을 서로 일치시켜준다.
+					초기값으로 선택되어질 항목에는 checked="checked"속성을 넣어준다.
+				</p>										
+				<label> <input type="radio" name="gender" checked="checked"> male </label>
+				<label> <input type="radio" name="gender"> female </label>
+				<label> <input type="radio" name="gender"> other </label>
+				
+				<!-- 연습 -->
+				<p> 코로나19 특별지원금 대상자?<br>
+				<label><input type="radio" name="cob">네, 대상자입니다.</label> <br>
+				<label><input type="radio" name="cob">아니오, 대상자가 아닙니다.</label>
+				</p>
+				
+				
+			<h2>&ltinput type="checkbox"&gt 다중 선택용 체크박스(객관식)</h2>
+				<p>
+					코로나19 특별지원금 수령방법으로 선호하는 것은? (중복 선택 가능)	<br>
+				<label> <input type="checkbox">신용카드</label>	<br>
+				<label> <input type="checkbox">상품권</label>		<br>
+				<label> <input type="checkbox">현금</label>		<br>
+				</p>
+<hr>			
+<hr>			
+			<h2>&ltinput type="file"&gt 파일 전송용</h2>
+				<label>졸업증명서 사본<input type="file"></label>
+			
+			<h2>&ltinput type="search"&gt 검색용 <small>(내용삭제표시 기능)</small></h2>
+				<input type="search" value="내용삭제표시 기능 ----->">
+				
+			<h2>&ltinput type="hidden"&gt 사용자에게는 보이지 않는 데이터 전송용</h2>
+				<input type="hidden" value="아무것도 안 보이지롱">
+<hr>			
+<hr>				
+			<h2>select 공간 절약형(객관식)</h2>
+				<p>
+					복습이 필요한 과목은?		<br>
+					<select>
+						<option>web		</option>
+						<option>jsp		</option>
+						<option>js		</option>
+						<option>oracle	</option>
+						<option>job		</option>
+					</select>
+				</p>
+				<p>
+					상담 희망 시간은?			<br>
+					<select>
+						<option>09:00~10:00</option>
+						<option>10:00~11:00</option>
+						<!--	selected="selected" 속성을 넣으면 기본으로 설정됨	-->
+						<option selected="selected">11:00~12:00</option> 
+						<option>13:00~14:00</option>
+						<option>14:00~15:00</option>
+					</select>
+				</p>
+				<p>
+					희망 회의 시간은?(복수선택가능)	<br>
+					<!-- multiple속성으로 다중선택 가능한 상자형으로 설정 -->
+					<!-- ctrl 또는 shift 키와 같이 누른 채로 선택해서 복수 선택 가능 -->
+					<select multiple="multiple">
+						<option>1교시</option>
+						<option>2교시</option>
+						<option>3교시</option>
+						<option>4교시</option>
+						<option>5교시</option>
+						<option>6교시</option>
+						<option>7교시</option>
+						<option>8교시</option>
+					</select>
+				</p>
+				<p>
+					희망 회의 시간은?	<br>
+					<!-- size="n" 속성으로 n개만큼 항목이 보이는 상자형으로 설정 -->
+					<select size="10">
+						<option>1교시</option>
+						<option>2교시</option>
+						<option selected="selected">3교시</option>
+						<option>4교시</option>
+						<option>5교시</option>
+						<option>6교시</option>
+						<option>7교시</option>
+						<option>8교시</option>
+					</select>
+				</p>
+<hr>			
+<hr>
+			<h2>&ltinput type="submit/reset/button"&gt 제출/취소/일반버튼</h2>
+				<p>value속성의 값으로 버튼의 눈에 보이는 글자를 지정할 수 있다.</p>
+				<p>
+				<input type="submit">
+				<input type="reset">
+				<input type="button">
+				<input type="button" value="클릭" onclick="alert('누르지마세요')">
+				</p>
+<hr>			
+<hr>		
+			<h2>&ltbutton&gt ... &lt/button&gt</h2>
+				<p>
+					시작과 종료태그 사이에 버튼의 글자를 넣어주고,	<br>
+					기본 기능은 전송(submit)이다.				<br>
+					취소 기능은 type="reset"				<br>
+					일반 버튼은 type="button"을 준다			<br>
+				</p>
+				<button>Submit</button>
+				<button type="reset"><b>R</b><i>eset</i></i></button>
+				<button type="button" onclick="alert('그만 누르세요')">click</button>
+				<button type="button">
+					<img alt="" src="https://www.w3schools.com/tags/img_submit.gif">Img Button
+				</button>
+<hr>			
+<hr>					
+			<h2>&ltinput type="image"&gt 전송버튼 역할의 이미지</h2>
+				<p>
+					src속성으로 이미지의 경로를 지정함.				<br>
+					width속성으로 이미지의 가로 크기를,				<br>
+					height속성으로 이미지의 세로 크기를 조절할 수 있다.	<br>
+				</p>
+				<p>크기조절		<br>
+				<input type="image" src="https://www.w3schools.com/tags/img_submit.gif">
+				<input type="image" src="https://www.w3schools.com/tags/img_submit.gif"
+									width="30" height="30">
+				</p>
+
+	</form>
+</body>
+</html>
