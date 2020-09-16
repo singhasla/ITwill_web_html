@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<nav>
+		<a href="test04.html">form-1</a>
+		<a href="test05.html">form-2</a>
+	</nav>
+	
+	<h1>form-2</h1>	
+<hr>
+	<h1>html5에서 추가된 &lt;input type&gt;의 속성값들</h1>
+		<p>
+			html5에서 모바일환경에 알맞는 폼요소들이 추가됨<br>
+			input type의 값에 따라 형태, 종류가 달라짐
+		</p>
+	
+	<form action="test.jsp" method="post">
+		<h2>input type="time" :사용자의 지역을 기준으로 시간(시,분)을 지정</h2>
+		<input type="time">
+		
+		
+		<h2>input type="date" :사용자의 지역을 기준으로 날짜(연,월,일)을 지정</h2>
+		<input type="date"> <br>
+		<input type="date" min="2000-01-01"> <- min="2000-01-01" 적용
+		
+		
+		<h2>input type="datetime-local" :사용자의 지역을 기준으로 날짜와 시간(연,월,일,시,분)을 지정</h2>
+		<input type="datetime-local">
+		
+		
+		<h2>input type="week" :사용자의 지역을 기준으로 날짜(연,주) 지정</h2>
+		<input type="week">
+		
+		
+		<h2>input type="month" :사용자의 지역을 기준으로 날짜(연,월) 지정</h2>
+		<input type="month">
+		
+		
+		<h2>input type="number" :숫자값을 지정</h2>
+			<p>
+				min속성으로 입력값의 최소치를,<br>
+				max속성으로 입력값의 최대치를,<br>
+				step속성으로 입력값의 간격을 지정할 수 있다.<br>
+			</p>	
+				<input type="number">
+				<ol>
+					<li><label>주문수량<input type="number" min="0"></label>개(min="0")</li>
+					<li><label>주문수량<input type="number" max="100"></label>개(max="100")</li>
+					<li><label>주문수량<input type="number" step="15"></label>개(단위수량, step="15")</li>
+				</ol>
+		
+		
+		<h2>input type="range" :범위 내의 값을 지정</h2>
+		<input type="range">
+		
+		
+		<h2>input type="tel" :연락처(전화번호 형식). <br>
+			<small>모바일 브라우저에서 가상키패드로 숫자 입력 <br>
+		</h2>
+		<input type="tel">
+		
+		
+		<h2>input type="email" 연락처(이메일 형식). <br>
+			<small>	모바일 브라우저에서 가상키패드가 @ 등을 지원할 수 있게 바뀐다. <br>
+					브라우저에서 알맞은 형식의 값인지 체크해줌.	</small>
+		</h2>
+		<input type="email">
+		
+		
+		<h2>input type="url" :연락처(웹주소 형식). <br>
+			<small>	모바일 브라우저에서 가상키패드가 https:// 등을 지원할 수 있게 바뀐다. <br>
+					브라우저에서 알맞은 형식의 값인지 체크해줌.	</small>
+		</h2>
+		<input type="url">
+		
+		
+		<h2>input type="color" :색상값을 지정</h2>
+		<input type="color">
+	
+<hr>
+	<h1>html5에서 추가된 &lt;input&gt;의 속성들</h1>
+		<h2>autofocus="autofocus" :커서가 자동으로 미리 위치</h2>
+		<input type="text" autofocus="autofocus">
+		
+		
+		<h2>autocomplete="on/off" :자동완성기능 on/off(기본값은 on)</h2>
+		<input type="text" autocomplete="off">
+		
+		
+		<h2>placeholder="텍스트" :입력예시나 설명문을 넣어줌</h2>
+		<input type="text" placeholder="비밀번호를 입력하세요">	<br>
+		
+		
+		<h2>required="required" :필수입력 요소로 지정 <br>
+			<small>	브라우저에서 입력데이터의 유무를 체크함.</small>
+		</h2>
+		<input type="text" required="required">
+		
+		
+		<h2>readonly="readonly" :읽기만 가능한 요소로 지정</h2>
+		당신은 <input type="text" readonly="readonly" value="A조">입니다.
+		
+		
+		<h2>disabled="disabled" :사용불가 요소로 지정</h2>
+		당신은 <input type="text" disabled="disabled" value="개인회원">입니다.
+<hr>	
+<hr>
+		<input type="submit">
+		<input type="reset">
+	</form>
+<hr>	
+<hr>
+	<h1>form 요소들의 그룹화</h1>
+	<p>
+		<b>fieldset</b> tag로 폼 요소들을 목적, 주제에 따라 한번에 묶어주고 <br> 
+		해당 fieldset의 제목은 <b>legend</b> tag로 지정하면 됨
+	</p>
+	<fieldset>
+		<legend>필수입력</legend>
+		<input type="text" placeholder="id를 입력하세요" required="required">
+		<input type="password" placeholder="pw를 입력하세요" required="required">
+	</fieldset>
+
+	<fieldset>
+		<legend>선택입력</legend>
+		<input type="text" placeholder="지원 팀">
+		<input type="text" placeholder="희망 분야">	
+	</fieldset>
+</body>
+</html>

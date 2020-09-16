@@ -5,6 +5,11 @@
 <title>form-1</title>
 </head>
 <body>
+	<nav>
+		<a href="test04.html">form-1</a>
+		<a href="test05.html">form-2</a>
+	</nav>
+
 	<h1>form</h1>
 	<p>
 		form은 사용자와 서버를 연결하는 페이지 부분을 구성한다.				<br>
@@ -27,9 +32,9 @@
 					그리고 [label태그의 속성의 값]과 [input태그의 속성의 값]을 일치시켜주면 서로 연결된다. 	<br>
 				</p>
 				<label for="id">ID</label>	
-					<input type="text" id="id" maxlength="10"> 	<br>
+				<input type="text" id="id" maxlength="10"> 	<br>
 				<label for="pn">생년월일</label>	
-					<input type="text" id="pn" maxlength="6" minlength="6" size="13"> 	<br>
+				<input type="text" id="pn" maxlength="6" minlength="6" size="13"> 	<br>
 				<ul>
 					<li>size="n"		상자의 길이</li>
 					<li>maxlength="n"	입력데이터의 최대길이</li>
@@ -136,6 +141,66 @@
 						<option>6교시</option>
 						<option>7교시</option>
 						<option>8교시</option>
+					</select>
+				</p>
+<hr>			
+<hr>
+			<h4>optgroup으로 option들을 그룹화하여 표시하기</h4>
+				<p>개발 회의에 참석할 대표자는?<br>
+					<select multiple="multiple" size="5">
+						<optgroup label="A조">
+							<option>가나다</option>
+							<option selected="selected">라마바</option>
+							<option>사아자</option>
+							<option>차카타</option>
+						</optgroup>
+						<optgroup label="B조">
+							<option>ABC</option>
+							<option selected="selected">DEF</option>
+							<option>GHI</option>
+							<option>JKL</option>
+						</optgroup>
+					</select>
+				</p>
+				
+				<p>optgroup tag에 label속성으로<br>해당 옵션그룹의 제목을 표시한다
+				</p>
+				
+				<pre> 	&lt;select&gt;
+						&lt;optgroup label="1그룹의 제목"&gt;
+						&lt;option ... /option&gt;
+						&lt;option ... /option&gt;
+						&lt;option ... /option&gt;
+								.
+								.
+								.
+						&lt;/optgroup&gt;
+						
+						&lt;optgroup label="2그룹의 제목"&gt;
+						&lt;option ... /option&gt;
+						&lt;option ... /option&gt;
+						&lt;option ... /option&gt;
+								.
+								.
+								.
+						&lt;/optgroup&gt;
+						&lt;/select&gt;
+				</pre>
+				
+				<p>
+					<select>
+						<optgroup label="WEB">
+							<option>1교시</option>
+							<option>2교시</option>
+							<option>3교시</option>
+							<option>4교시</option>
+						</optgroup>
+						<optgroup label="JSP">
+							<option>5교시</option>
+							<option>6교시</option>
+							<option>7교시</option>
+							<option>8교시</option>
+						</optgroup>
 					</select>
 				</p>
 <hr>			
