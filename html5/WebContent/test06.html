@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>a태그로 링크 걸기</title>
+</head>
+<body>
+	<h1>a태그로 링크 걸기</h1>
+	<p>
+		&lt;a href="보여줄 내용의 경로(주소값)"&gt; <br>
+		<a href="img.html">이미지 수업 보기</a><br>
+		링크가 걸린 텍스트는 밑줄이 나타나고 마우스커서가 바뀌며 색상이 변화함.<br>
+		(1.초기링크=파란색 / 2.방문한 링크=보라색 / 3.활성화링크=빨간색)
+	</p>
+	
+	<h2>target속성으로 링크를 여는 방식(위치) 지정하기</h2>
+	<ol>
+		<li>target="_self"		기본값. 현재 위치에 링크가 열림.</li>
+		<li>target="_blank" 	새 탭에 링크가 열림.</li>
+		<li>target="_top"		프레인으로 나뉘지 않고 전체에 링크가 열림.</li>
+		<li>target="_parent"	한 단계 상위창에 링크가 열림.</li>
+	</ol>
+	
+	<h2>1. 절대경로로 외부사이트 보여주기</h2>
+		<a href="https://www.w3schools.com/" target="_blank" title="새 탭에 열기">웹다이쏘 가기</a><br>
+		<a href="https://www.naver.com/" target="_blank" title="새 탭에 열기">네이버 사이트 가기</a><br>
+		<a href="https://www.google.com/">구글 사이트 가기</a>
+	
+	<h2>2-1. 상대경로로 웹문서(*.html / *.htm) 보여주기</h2>
+		<a href="test04.html">폼수업1 보기</a><br>
+		<a href="test05.html">폼수업2 보기</a>
+	
+	<h2>2-2. 상대경로로 이미지(*.jpg / *.gif / *.png) 보여주기</h2>
+		<a href="img/pc1.jpg" target="_blank">노트북1 사진</a>
+		<a href="img/pc1.jpg" target="_blank">노트북2 사진</a>
+		<a href="img/png/leaves__240.png" target="_blank">잎사귀png 사진</a>
+		
+	<h2>2-3. 상대경로로 동영상(*.mp4 / *.ogg / *.webm) 보여주기</h2>
+		<a href="mov_bbb.mp4" target="_blank" title="웹다이쏘 동영상">동영상</a>
+		
+	<h2>2-4. 상대경로로 텍스트(*.txt) 보여주기</h2>
+		<a href="폼테스트.txt">폼테스트용 내용</a>
+		
+	<h2>2-5. 압축파일로 링크 걸기</h2>
+		<p>
+			브라우저가 처리불가한 파일(내용)을 링크 걸면 다운로드 됨.<br>
+			예) 압축파일, 한글파일, 엑셀 등...
+		</p>
+		<a href="img.zip">이미지 압축파일</a>
+<hr>	
+	<h2>mailto: 으로 email 링크 걸기</h2>
+		<a href="mailto:class@itwillbs.co.kr">itwill busan email</a> <br>
+		
+		<a href="mailto:seungha0215@nate.com">이승하 이메일</a>
+		
+</body>
+</html>
