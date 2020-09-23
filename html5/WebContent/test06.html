@@ -5,6 +5,10 @@
 <title>a태그로 링크 걸기</title>
 </head>
 <body>
+	<a href="test06.html">링크 - 1</a>
+	<a href="test07.html">링크 - 2</a>
+
+
 	<h1>a태그로 링크 걸기</h1>
 	<p>
 		&lt;a href="보여줄 내용의 경로(주소값)"&gt; <br>
@@ -31,8 +35,8 @@
 		<a href="test05.html">폼수업2 보기</a>
 	
 	<h2>2-2. 상대경로로 이미지(*.jpg / *.gif / *.png) 보여주기</h2>
-		<a href="img/pc1.jpg" target="_blank">노트북1 사진</a>
-		<a href="img/pc1.jpg" target="_blank">노트북2 사진</a>
+		<a href="img/jpg/pc1.jpg" target="_blank">노트북1 사진</a>
+		<a href="img/jpg/pc2.jpg" target="_blank">노트북2 사진</a>
 		<a href="img/png/leaves__240.png" target="_blank">잎사귀png 사진</a>
 		
 	<h2>2-3. 상대경로로 동영상(*.mp4 / *.ogg / *.webm) 보여주기</h2>
@@ -52,6 +56,68 @@
 		<a href="mailto:class@itwillbs.co.kr">itwill busan email</a> <br>
 		
 		<a href="mailto:seungha0215@nate.com">이승하 이메일</a>
+	
+	<h2>이미지에 이메일 링크 걸기</h2>
+		<a href="mailto:class@itwillbs.co.kr">
+			class@itwillbs.co.kr 이메일 보내기
+			<img alt="이메일 보내기" src="img/png/confirm.png" width="30" height="30">
+		</a>
 		
+	<h2>이미지에 링크 걸기</h2>
+		<a href="https://www.apple.com/iphone" target="_blank" title="iphone으로 이동">
+			<img alt="iphone" src="img/png/phone.png" width="100" border="10">
+		</a>
+	
+		<a href="http://www.bjl.go.kr/main/index.php" target="_blank" title="부전도서관으로 이동">
+			<img alt="부전도서관" src="img/jpg/city1.jpg" width="250">
+		</a>
+		
+	<h2>이미지에 이미지맵으로 다중링크 걸기</h2>
+		<p>이미지 하나에 부분적으로나 각 부분별로 따로 링크를 걸 수 있다.</p>
+		<pre>
+			&lt;img alt="대체텍스트" src="이미지경로" usemap="#이미지맵이름"&gt;
+			&lt;map name="이미지맵이름"&gt;
+			&lt;area shape="영역모양타입 종류(rect/circle/poly)" coords="x1,y1,x2,y2" href="링크주소" target="_blank" title="툴팁" alt=""&gt;
+		</pre>
+		<h3>이미지맵 생성기</h3>
+		<ol>
+			<li><a href="https://www.image-map.net/" target="_blank">https://www.image-map.net/</a></li>
+			<li><a href="http://maschek.hu/imagemap/imgmap/" target="_blank">http://maschek.hu/imagemap/imgmap/</a></li>
+		</ol>
+			<p>
+				<img alt="차" src="img/jpg/sky2.jpg" usemap="#car" >
+					<map name="car">
+						<area shape="rect" coords="175,261,487,398"
+								href="https://www.lamborghini.com" target="_blank" title="람보르기니">
+					</map>
+				shape="rect" 사각형
+			</p>
+			
+			<p>
+				<img alt="강아지" src="img/jpg/dog1.jpg" usemap="#dog" >
+					<map name="dog">
+						<area shape="circle" coords="359,194,69" 
+								href="https://terms.naver.com/entry.nhn?cid=42883&docId=1977911&categoryId=44356" target="_blank" title="웰시코기">
+						<area shape="circle" coords="202,208,49" 
+								href="https://terms.naver.com/entry.nhn?cid=42883&docId=1977895&categoryId=44356" target="_blank" title="푸들">
+					</map>
+				shape="circle" 원형
+			</p>
+			
+			<p>
+				<img alt="노트북" src="img/jpg/pc1.jpg" usemap="#notebook" >
+					<map name="notebook">
+						<area shape="poly" coords="29,266,240,328,441,285,523,75,290,74,216,236" 
+								href="https://www.apple.com/kr/macbook-air/" target="_blank" title="맥북에어">
+					</map>
+				shape="poly" 다각형
+			</p>
+			
+		
+		
+	
+<br>
+	<a href="#">TOP</a>
+	<a href="#h3-map">이미지맵</a>
 </body>
 </html>
