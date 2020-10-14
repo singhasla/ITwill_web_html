@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iframe</title>
+</head>
+<body>
+	<h1>iframe으로 브라우저에 다른 문서(내용) 보여주기</h1>
+	<iframe>
+		-iframe 지원불가한 브라우저용 메시지-
+		해당 브라우저는 내용을 보실 수 없습니다. 업데이트 요망!
+	</iframe>
+	<h3>src="보여질 내용"</h3>
+	<iframe src="test06.html"></iframe>
+	
+	<h3>width="n" height="n"</h3>
+	<iframe src="test07.html" width="800" height="600"></iframe>
+	
+	<h3>src="url" 외부경로 사이트</h3>
+	<iframe src="https://itwillbs.co.kr/" width="1000" height="500"></iframe>
+	
+	<h3>src=".gif / .jpg / .png / ... "(이미지파일)</h3>
+	<iframe src="img/png/leaves__340.png"></iframe>
+	
+	<h3>src=".mp4 / .webm / .mpeg / ... "(동영상파일)</h3>
+	<iframe src="mov_bbb.mp4"></iframe>
+	
+	<h3>src=".txt"(텍스트파일)</h3>
+	<iframe src="폼테스트.txt"></iframe>
+	
+	<hr>
+	<h2>iframe안에 링크 열어주기</h2>
+	<nav>
+		<a href="test04.html" target="html-box">test04.html</a>
+		<a href="test05.html" target="html-box">test05.html</a>
+		<a href="test06.html" target="html-box">test06.html</a>
+		<a href="test07.html" target="html-box">test07.html</a>
+	</nav>
+	<iframe src="test07.html" name="html-box" width="800" height="500"></iframe>
+	
+	<h2>iframe안에 링크 열어주기</h2>
+	<nav>
+		<a href="https://pixabay.com" target="html-box2">pixabay.com</a>
+		<a href="http://pexels.com" target="html-box2">pexels.com</a>
+		<a href="http://csszengarden.com" target="html-box2">csszengarden.com</a>
+	</nav>
+	<iframe src="" name="html-box2" width="800" height="500"></iframe>
+	
+	csszengarden.com
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+h2, ul{	color: red; }
+/*	선택자 a,b{ }형식은 그룹선택자.
+ *	동시에 여러 선택자에게 동일한 스타일 적용(종류 달라도 됨)
+ */
+
+h1:hover{
+	font-family:"Black Han Sans", sans-serif;
+
+	font-weight: 500;
+	color: #0aa;
+}
+.h1{
+	font-size: 40px;
+}
+
+section{
+ 	border: 3px	solid #ccc;
+ 	padding: 1em;
+ 	margin: 3em 1em;
+}
+
+h2{	color: #0080ff;}
+
+#fs{
+	border: 1px solid blue;
+	font-size: 25px;
+}
+
+ /* 폰트 사이즈 */
+.fs01{ font-size: 12px; }
+.fs02{ font-size: 16px; }	/* default 크기 */ 
+.fs03{ font-size: 20px; }
+.fs04{ font-size: 0.8em; }
+.fs05{ font-size: 1.0em; }
+.fs06{ font-size: 1.2em; }
+.fs07{ font-size: 0.8rem; }
+.fs08{ font-size: 1.0rem; }
+.fs09{ font-size: 1.2rem; }
+
+.fw01{ font-weight: 100; }
+.fw03{ font-weight: 300; }
+.fw05{ font-weight: 500; } 
+.fw07{ font-weight: 700; } 
+.fw09{ font-weight: 900; }
+.fwbd{ font-weight: bold; }
+.fwnm{ font-weight: normal; }
+
+.fw_span{ font-weight: bold; }
+.fw_label{ font-weight: bold; }
+
+.nm{ font-weight: normal; }
+
+.fst01{ font-style: italic; }
+.fst02{ font-style: oblique; }
+.fst03{ font-style: normal; }
+
+.hov-i:hover{ 
+	font-style: italic;
+	font-size: 30px; 
+}
+/*	선택자 :hover는
+ *	마우스 오버시의 상태를 지정하는 상태선택자
+ */
+ 
+.ffm01{ font-family: "Arial", "Verdana", sans-serif; }
+.ffm02{ font-family: "Georgia", "Times New Roman", "Times", serif; }
+.ffm03{ font-family: "Lucida Console", monospace; }
+
+.ffm04{ font-family: "Jua", sans-serif; }
+.ffm05{ font-family: "Gugi", cursive; }
+.ffm06{ font-family: "Black Han Sans", sans-serif; }
