@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text-</title>
+<link href="style.css" rel="stylesheet">
+<link href="text.css" rel="stylesheet">
+</head>
+<body>
+	<h1>text- 로 시작하는 글자 속성들</h1>
+		<ul>
+			<li>text-align: ; 컨텐츠(글자)의 수평 정렬</li>
+			<li>text-decoration: ; 글자의 여러 줄들</li>
+			<li>text-indent: ; 글자 들여쓰기</li>
+			<li>text-transform: ; 영문의 대소문자 지정</li>
+			<li>text-overflow: ; 영역 밖의 글자 처리 방법</li>
+			<li>text-shadow: ; 글자의 그림자 효과</li>
+		</ul>
+		
+	<section id="sec01">
+		<h2>text-align: ; 컨텐츠()글자의 수평 정렬</h2>
+		
+		<p class="t-al01">text-align: left;<br>	
+				컨텐츠(글자)의 수평정렬 - 왼쪽(기본)</p>
+		<p class="t-al02">text-align: center;<br>
+				컨텐츠(글자)의 수평정렬 - 중앙</p>
+		<p class="t-al03">text-align: right;<br>
+				컨텐츠(글자)의 수평정렬 - 오른쪽</p>
+		<p class="t-al04">text-align: justify;<br>
+				컨텐츠(글자)의 수평정렬 - 양끝정렬<br>
+		(1. 동해물과 백두산이 마르고 닳도록
+		하느님이 보우하사 우리나라 만세
+		무궁화 삼천리 화려 강산
+		대한 사람 대한으로 길이 보전하세
+		
+		2. 남산 위에 저 소나무 철갑을 두른 듯
+		바람 서리 불변함은 우리 기상일세
+		무궁화 삼천리 화려 강산
+		대한 사람 대한으로 길이 보전하세
+		
+		3. 가을 하늘 공활한데 높고 구름 없이
+		밝은 달은 우리 가슴 일편단심일세
+		무궁화 삼천리 화려 강산
+		대한 사람 대한으로 길이 보전하세
+		
+		4. 이 기상과 이 맘으로 충성을 다하여
+		괴로우나 즐거우나 나라 사랑하세
+		무궁화 삼천리 화려 강산
+		대한 사람 대한으로 길이 보전하세)</p>
+		
+		<p class="t-al02">
+			<img alt="serif" src="serif.gif">
+		</p>
+		<p>
+			<input type="text" value="text-align" class="t-al02">
+			<input type="text" value="text-align" class="t-al03">
+		</p>
+		
+		<table>
+			<tr>
+				<th>th01</th>
+				<th id="th02">th02</th>
+				<th style="text-align: right">th03</th>	<!-- 인라인 방식 -->
+			</tr>
+			<tr>
+				<td>td01</td>
+				<td class="td02">td02</td>
+				<td class="td03">td03</td>
+			</tr>
+		</table>
+	</section>
+	
+	<section id="sec02">
+		<h2>text-decoration: ; 글자의 여러 줄들</h2>
+		
+		<p class="t-de01">text-decoration: overline; 글자의  윗줄</p>
+		<p class="t-de02">text-decoration: line-through; 글자의 중간줄(취소선)</p>
+		<p class="t-de03">text-decoration: <b>underline</b>; 글자의 아랫줄</p>
+		<p class="t-de04">text-decoration: none ; 
+								<a href="#">링크 걸린 글자</a>의 밑줄 제거</p>
+			<em>
+				tag a의 특징은 중요한 사항이므로 기본값(색상, 밑줄)은 
+				반드시 a본인에게 적용해야 바뀜(부모나 상위요소의 영향 받지 않음)
+			</em>
+	</section>
+	
+	<section id="sec03">
+		<h2>text-indent: ; 글자 들여쓰기</h2>
+		
+		<p class="t-in01">text-indent: 16px;	들여쓰기</p>
+		<p class="t-in02">text-indent: 1.5em;	들여쓰기</p>
+		<p class="t-in03">text-indent: 10%;	들여쓰기</p>
+		<p class="t-in04">text-indent: -50PX;	들여쓰기</p>
+		<p class="t-in05">text-indent: 25%;	들여쓰기<b> 첫 줄에만 적용됨</b></p>
+		<p class="t-in06">text-indent: 150PX;	들여쓰기</p>
+	</section>
+	
+	<section id="sec04">
+		<h2>text-transform: ; 영문의 대소문자 지정</h2>
+		
+		<p class="t-tr01">tEXt-TraNsfOrm: nONe; 변화없음(쓴데로 나옴)</p>
+		<p class="t-tr02">tEXt-TraNsfOrm: LoWeRCaSe; 전체를 소문자로 변경</p>
+		<p class="t-tr03">tEXt-TraNsfOrm: UpPeRCaSe; 전체를 대문자로 변경</p>
+		<p class="t-tr04">teXT-transform: capiTALize; 첫글자만 대문자로 변경</p>
+	</section>
+	
+	<section id="sec05">
+		<h2>text-overflow: ; 영역 밖의 글자 처리 방법</h2>
+	</section>
+	
+	<section id="sec06">
+		<h2>text-shadow: ; 글자의 그림자 효과</h2>
+		
+		<p class="t-sh01">1text-shadow: <br>5px 5px 5px red;</p>
+		<p class="t-sh02">2text-shadow: <br>5px 0 0 red;</p>
+		<p class="t-sh03">3text-shadow: <br>0 5px 0 red;</p>
+		<p class="t-sh04">4text-shadow: <br>0 0 7px red;</p>
+		<p class="t-sh05">5text-shadow: <br>0 0 0 yellow;</p>
+		<p class="t-sh06">6text-shadow: <br>-5px -5px -5px green;</p>
+		<p class="t-sh07">7text-shadow: <br>100px 100px 5px blue;</p>
+		<p class="t-sh08 lig">8text-shadow: ;</p>
+		<p class="t-sh09 lig">9text-shadow: ;</p>
+		<p class="t-sh10">10text-shadow: 이중 그림자 효과;</p>
+	</section>
+</body>
+</html>

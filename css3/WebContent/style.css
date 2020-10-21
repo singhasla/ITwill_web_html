@@ -1,0 +1,27 @@
+@charset "UTF-8";	/* style.css는 수업시간 공용스타일 */
+
+h1{
+	margin-bottom: 2em;
+	border-left: 12px solid;
+	padding : 0.3em 0.8em;
+	background-color: #add;
+	font-family: "나눔 명조", "맑은 명조", serif;
+	text-transform: capitalize;
+	color: #355;
+}
+
+section {
+	border: 3px solid #add;
+	margin: 3em 0;
+	padding: 1em;
+}
+
+section>h2 {
+	border-bottom: 3px solid;
+	color: #355;
+}
+
+.text {
+	line-height: 1.8;
+	white-space: pre;
+}
