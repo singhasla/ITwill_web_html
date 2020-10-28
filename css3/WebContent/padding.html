@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding-요소의 내부여백</title>
+<link href="style.css" rel="stylesheet">
+<link href="padding.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>padding - 요소의 내부여백</h1>
+	
+	<h2>padding값의 갯수별 적용</h2>
+	<ul id="pn">
+		<li class="pn-01">padding: n; 전방향</li>
+		<li class="pn-02">padding: n n; 상하, 좌우</li>
+		<li class="pn-03">padding: n n n; 상, 좌우, 하</li>
+		<li class="pn-04">padding: n n n n; 상, 우, 하, 좌</li>
+	</ul>
+	
+	<div id="ph-box">
+	<h3 class="tit03">polaroid (padding) 효과</h3>
+		<img title="padding: 10px;" alt="dog" src="img/dog1.jpg" width="300" class="ph01">
+		<img title="padding: 20px 10px;" alt="dog" src="img/dog1.jpg" width="300" class="ph02">
+		<img title="padding: 10px 12px 80px;" alt="dog" src="img/dog1.jpg" width="300" class="ph03">
+		<img title="padding: 14px 14px 100px 14px;" alt="dog" src="img/dog1.jpg" width="300" class="ph04">
+	</div>
+	
+	<h2>padding의 방향별 적용 속성</h2>
+	<ul id="pdr">
+		<li class="pdr-t">padding-top: n; 위쪽에만 내부여백 n이 적용됨.</li>
+		<li class="pdr-r">padding-right: n; 오른쪽에만 내부여백 n이 적용됨.</li>
+		<li class="pdr-b">padding-bottom: n; 아래쪽에만 내부여백 n이 적용됨.</li>
+		<li class="pdr-l">padding-left: n; 왼쪽에만 내부여백 n이 적용됨.</li>
+	</ul>
+	
+	<h3 class="h3-02">input type="text"에서의 적용 예</h3>
+	<input type="text" value="padding: 0.5em;" class="in-pd01"/>
+	<input type="text" value="padding: 0.5em 1em;" class="in-pd02"/>
+	<input type="text" value="padding-top: 0.5em; padding-left: 0.7em;" class="in-pd03"/>
+	<input type="text" value="padding: 0.3em" class="in-pd04"/>
+<br><br>
+	<label for="id" class="la-pd01">ID</label>
+	<input type="text" id="id" value="padding" class="in-pd04"/>
+	
+	<h3 class="h3-02">a tag에서의 적용 예(a태그는 크기 적용불가)</h3>
+	<nav>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+	</nav>
+</body>
+</html>
