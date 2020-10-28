@@ -1,31 +1,31 @@
 @charset "UTF-8";
 
-h1{
+h1 {
 	font-size: 36px;
 	font-weight: 500;
 }
 
-#sec01>p{
+#sec01>p {
 	border: 1px solid;
 }
 
-table, th, td{border: 1px solid;}
+table, th, td {border: 1px solid;}
 
-#sec01>table{
+#sec01>table {
 	margin-top: 50px;
 	width: 500px;
 	height: 100px;
 }
 
-#th02{text-align: left;}
+#th02 {text-align: left;}
 
-.td02:hover{text-align: center;}
-.td03:hover{
+.td02:hover {text-align: center;}
+.td03:hover {
 	text-align: right;
 	color: red;
 	}
 	
-#sec06>p{
+#sec06>p {
 	border: 1px solid;
 	padding: 0.5em;
 	font-size: 40px;
@@ -36,77 +36,86 @@ table, th, td{border: 1px solid;}
 	
 	
 /* text-align */
-.t-al01{text-align: left;}
-.t-al02{text-align: center;}
-.t-al03{text-align: right;}
-.t-al04{text-align: justify;}
+.t-al01 {text-align: left;}
+.t-al02 {text-align: center;}
+.t-al03 {text-align: right;}
+.t-al04 {text-align: justify;}
 
 /* text-decoration */
-.t-de01{text-decoration: overline;}
-.t-de02{text-decoration: line-through;}
-.t-de03{text-decoration: underline;}
-.t-de04{
+.t-de01 {text-decoration: overline;}
+.t-de02 {text-decoration: line-through;}
+.t-de03 {text-decoration: underline;}
+.t-de04 {
 	background-color: #d30;
 	padding: 0.5em;
 	text-align: center;
 	}
-.t-de04>a{
+.t-de04>a {
 	text-decoration: none;
 	color: olive;
 	}
-.t-de04>a:hover{
+.t-de04>a:hover {
 	text-decoration: underline;
 	background-color: #000;
 	}
 	
 /* text-indent */
-.t-in01{text-indent: 16px;}
-.t-in02{text-indent: 1.5em;}
-.t-in03{text-indent: 10%;}
-.t-in04{text-indent: -50px;}
-.t-in05{text-indent: 25%;}
-.t-in06:hover{
+.t-in01 {text-indent: 16px;}
+.t-in02 {text-indent: 1.5em;}
+.t-in03 {text-indent: 10%;}
+.t-in04 {text-indent: -50px;}
+.t-in05 {text-indent: 25%;}
+.t-in06:hover {
 	text-indent: 150px;
 	transition: 2s; /* 2초동안  적용 */
 	}
 	
 /* text-transform */
-.t-tr01{text-transform: none;}
-.t-tr02{text-transform: lowercase;}
-.t-tr03{text-transform: uppercase;}
-.t-tr04{text-transform: capitalize;}
+.t-tr01 {text-transform: none;}
+.t-tr02 {text-transform: lowercase;}
+.t-tr03 {text-transform: uppercase;}
+.t-tr04 {text-transform: capitalize;}
 
 /* text-shadow */
-.t-sh01{text-shadow: 5px 5px 5px red;}
-.t-sh02{text-shadow: 5px 0 0 red;}
-.t-sh03{text-shadow: 0 5px 0 red;}
-.t-sh04{text-shadow: 0 0 5px red;}
-.t-sh05{text-shadow: 0 0 0 yellow;
+.t-sh01 {text-shadow: 5px 5px 5px red;}
+.t-sh02 {text-shadow: 5px 0 0 red;}
+.t-sh03 {text-shadow: 0 5px 0 red;}
+.t-sh04 {text-shadow: 0 0 5px red;}
+.t-sh05 {text-shadow: 0 0 0 yellow;
 		background-color: black;}
-.t-sh06{text-shadow: -5px -5px 5px green;}
-.t-sh07:hover{
+.t-sh06 {text-shadow: -5px -5px 5px green;}
+.t-sh07:hover {
 	text-shadow: 10px 10px 10px blue;
 	transition: 2s;
 	}
 	
-.lig{
+.lig {
 	background-color: #000;
 	color: #111111;
 	}
-.t-sh08{text-shadow: 0 0 5px #000;}
-.t-sh08:hover{
+.t-sh08 {text-shadow: 0 0 5px #000;}
+.t-sh08:hover {
 	text-shadow: 0 0 25px #cef;
 	transition: 2s;
 	}
-.t-sh09{
+.t-sh09 {
 	text-shadow: 0 0 25px #cef;
 	}
-.t-sh09:hover{
+.t-sh09:hover {
 	text-shadow: 0 0 0 #000;
 	transition: 2s;
 	}
-.t-sh10{text-shadow: 
+.t-sh10 {text-shadow: 
 		-3px -4px 4px #f00,
 		 3px 4px 4px #00f;
 		 /* 이중 그림자 */
 	 }
+
+.pre {
+	white-space: pre; /* 공백처리 = pre태그처럼 그대로*/
+}
+
+.pre>b {
+	font-size: 0.8em;
+	font-style: italic;
+}
