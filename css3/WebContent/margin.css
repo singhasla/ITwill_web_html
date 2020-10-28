@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* margin: n; 전방향 */
+#sec01>div, #sec02>div {border: 1px solid;}
+
+.d01 {color: #f00; margin: 30px;}
+.d02 {color: #fa0; margin: 10%;}
+.d03 {color: #008000; margin: 2em;}
+
+
+/* margin: n n; 상하, 좌우가 서로 동일 */
+.d21 {color: #00f; margin: 20px 5%;}
+.d22 {color: #ff0080; margin: 2em 7%;}
+.d23 {color: #008000; margin: 50px auto; 
+		width: 777px;	text-align: left;}
+		
+/* margin: n n n n; 상, 우, 하, 좌 */
+.d42 {
+	background-color: #ee6000;
+	margin: 0 50px 100px 300px;
+}
