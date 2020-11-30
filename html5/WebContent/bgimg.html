@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>background-image</title>
+<link href="style.css" rel="stylesheet">
+<link href="bgimg.css" rel="stylesheet">
+</head>
+<body>
+	<h1>background-image</h1>
+
+	<h2>background : 배경</h2>
+	<ul>
+		<li>background-color: rgb(n,n,n) or #nnnnnn or color명; 배경 색상</li>
+		<li>background-image: url("이미지경로"); 배경 이미지</li>
+	</ul>
+
+
+	<ul>
+		<li>background-repeat: ; 배경 이미지 반복 지정
+			<ol>
+				<li>repeat = 기본값, 양사방 반복</li>
+				<li>repeat-x = 가로로만 반복</li>
+				<li>repeat-y = 세로로만 반복</li>
+				<li>no-repeat = 반복 안함(한번만 보이기)</li>
+			</ol>
+		</li>
+		<li>background-size: ; 배경 이미지 크기 지정
+			<ol>
+				<li>contain = 이미지 하나를 온전히 보이게 설정</li>
+				<li>cover = 이미지 하나로 영역 전체를 덮이게 설정</li>
+				<li>n n = 가로값 세로값의 순서로 변경(단위는 px,em,% ...)</li>
+			</ol>
+		</li>
+		<li>background-position: ; 배경 이미지 위치 지정
+			<ol>
+				<li>l/c/r t/c/b = 수평 수직 순서로 방향값을 조합</li>
+				<li>n n = 가로값 세로값의 순서로 지정 (단위는 px,em,% ...)</li>
+			</ol>
+		</li>
+		<li>background-attachment: ; 배경 이미지 스크롤여부 지정
+			<ol>
+				<li>scroll</li>
+				<li>fixed</li>
+				<li>local</li>
+			</ol>
+		</li>
+	</ul>
+
+	<section id="sec01">
+		<h2>background-repeat: ; 배경 이미지 반복</h2>
+
+		<p class="bg-re01">background-repeat:repeat; 배경 이미지 반복 (기본값, 양사방
+			반복)</p>
+		<p class="bg-re02">background-repeat:repeat-x; 배경 이미지 반복 (가로로만 반복)</p>
+		<p class="bg-re03">background-repeat:repeat-y; 배경 이미지 반복 (세로로만 반복)</p>
+		<p class="bg-re04">background-repeat:no-repeat; 배경 이미지 반복 (반복
+			안함,한번만)</p>
+	</section>
+
+	<section id="sec02" class="clear">
+		<h2>background-size: ; 배경 이미지 크기</h2>
+
+		<p class="bg-sz01">
+			background-size:<b>contain</b>; <br> 이미지 하나를 온전히 보이게 설정
+		</p>
+		<p class="bg-sz02">
+			background-size:<b>cover</b>; <br> 이미지 하나로 영역 전체를 덮이게 설정
+		</p>
+		<p class="bg-sz03">
+			background-size:100% 100%; <br> 배경 이미지가 항상 영역에 꽉 차게<br> (가로
+			세로 순서)
+		</p>
+		<p class="bg-sz04">background-size:50% 100%; 배경 이미지 크기</p>
+		<p class="bg-sz05">background-size:100% 50%; 배경 이미지 크기</p>
+		<p class="bg-sz06">background-size:160px 320px; 배경 이미지 크기</p>
+	</section>
+
+	<section id="sec03" class="clear">
+		<h2>background-position: ; 배경 이미지 위치</h2>
+
+		<p class="bg-po01">background-position:left top; 배경 이미지 위치</p>
+		<p class="bg-po02">background-position:center center; 배경 이미지 위치</p>
+		<p class="bg-po03">background-position: ; 배경 이미지 위치</p>
+		<p class="bg-po04">background-position:center bottom; 배경 이미지 위치</p>
+		<p class="bg-po05">background-position:right center;배경 이미지 위치</p>
+		<p class="bg-po06">background-position:left bottom; 배경 이미지 위치</p>
+		<p class="bg-po07">background-position: ; 배경 이미지 위치</p>
+		<p class="bg-po08">background-position: ; 배경 이미지 위치</p>
+	</section>
+
+	<section id="sec04" class="clear">
+		<h2>background-attachment: ; 배경 이미지 스크롤여부</h2>
+
+		<p class="bg-att01">
+			<b>background-attachment:scroll;</b> 배경 이미지 스크롤 <br> 기본값. 브라우저
+			스크롤바에는 스크롤, <br> 자신 영역의 스크롤바에는 고정됨 <br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br>
+		</p>
+		<p class="bg-att02">
+			<b>background-attachment:fixed;</b> 배경 이미지 스크롤 <br> 브라우저 스크롤바와,
+			<br> 자신 영역의 스크롤바에 모두 고정됨 <br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br>
+		</p>
+		<p class="bg-att03">
+			<b>background-attachment:local;</b> 배경 이미지 스크롤 <br> 브라우저 스크롤바와,
+			<br> 자신 영역의 스크롤바에 모두 스크롤됨<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br> background-attachment: ; 배경 이미지 스크롤 <br>
+			<br>
+			<br>
+			<br>
+		</p>
+	</section>
+
+</body>
+</html>
