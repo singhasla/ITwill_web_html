@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+nav {
+	border: 1px solid pink;
+}
+
+nav>ul {
+	border: 1px solid green;
+	list-style: none;
+	/* overflow: hidden; 자식들이 float으로 빠져나가서 부모요소의 높이값이 없어진 것을 다시 복원하기 */
+}
+
+nav li {
+	border: 1px solid red;
+	 float: left; /* 나란히 배치 */
+	/* width: 70px;*/
+	margin-right: 10px; /* 메뉴간 간격 */
+}
+
+nav a {
+	text-decoration: none; /* 밑줄제거 */
+}
+
+/* 초기 링크상태와 방문한 링크상태 지정 */
+nav a:link, nav a:visited {
+	color: #333;
+}
+
+/* 마우스오버시 링크상태와 누르는동안(활성화) 링크상태 지정 */
+nav a:hover, nav a:active {
+	color: #ff0000;
+}
+
+section img {
+	width: 70px;
+}
+
+/* 1. 이미지 주변을 자연스럽게 둘러싸기 */
+#sec01 img {
+	float: left;
+}
+
+#sec02 img {
+	float: right;
+}
+
+/* 2. 나란히 배치 불가한 요소들을 나란히 배치하기 */
+#sec03>*:not(h2) {
+	border: 1px solid red;
+	float: left;
+	width: 100px;
+}
+
+#sec04>*:not(h2) {
+	border: 1px solid blue;
+	float: right;
+	width: 100px;
+}
+
+#sec01, #sec02 {
+	float: left;
+	width: 45%
+}
+
+.clear {
+	clear: both;
+}
+
+#sec05>p {
+	border: 1px solid blue;
+}
+
+.p1, .p2, .p3 {
+	width: 30%;
+	float: left;
+}
+.p4, .p5 {
+	width: 45%;
+	float: left;
+}

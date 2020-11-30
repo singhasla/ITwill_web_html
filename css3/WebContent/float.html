@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet">
+<link href="float.css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#sec01">menu01</a></li>
+			<li><a href="#sec03">menu02</a></li>
+			<li><a href="#sec04">menu03</a></li>
+			<li><a href="#sec05">menu04</a></li>
+		</ul>
+	</nav>
+	
+	<div class="clear"></div>
+	<h1>float - 뜨다, 부유하다</h1>
+	<ol>
+		<li>float:left; 요소를 띄워서 좌측으로..</li>
+		<li>float:right; 요소를 띄워서 우측으로..</li>
+	</ol>
+<hr>
+	<h1>1. 이미지 주변을 글자가 자연스럽게 둘러싸기</h1>
+	<section id="sec01">
+		<h2>img에 float:left; 적용</h2>
+			<p><img alt="phone" src="img/phone.png">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus imperdiet, nulla et dictum interdum, 
+				nisi lorem egestas odio, vitae scelerisque enim ligula 
+				venenatis dolor. Maecenas nisl est, ultrices nec congue 
+				eget, auctor vitae massa. Fusce luctus vestibulum augue 
+				ut aliquet. Mauris ante ligula, facilisis sed ornare eu, 
+				lobortis in odio. Praesent convallis urna a lacus 
+				interdum ut hendrerit risus congue. Nunc sagittis dictum 
+				nisi, sed ullamcorper ipsum dignissim ac. In at libero 
+				sed nunc venenatis imperdiet sed ornare turpis.	Donec 
+				vitae dui eget tellus gravida venenatis. Integer fringilla 
+				congue eros non fermentum. Sed dapibus pulvinar	nibh tempor 
+				porta. Cras ac leo purus. Mauris quis diam velit.
+			</p>
+	</section>
+	
+	<section id="sec02">
+		<h2>img에 float:right; 적용</h2>
+			<p><img alt="phone" src="img/phone.png">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus imperdiet, nulla et dictum interdum, 
+				nisi lorem egestas odio, vitae scelerisque enim ligula 
+				venenatis dolor. Maecenas nisl est, ultrices nec congue 
+				eget, auctor vitae massa. Fusce luctus vestibulum augue 
+				ut aliquet. Mauris ante ligula, facilisis sed ornare eu, 
+				lobortis in odio. Praesent convallis urna a lacus 
+				interdum ut hendrerit risus congue. Nunc sagittis dictum 
+				nisi, sed ullamcorper ipsum dignissim ac. In at libero 
+				sed nunc venenatis imperdiet sed ornare turpis.	Donec 
+				vitae dui eget tellus gravida venenatis. Integer fringilla 
+				congue eros non fermentum. Sed dapibus pulvinar	nibh tempor 
+				porta. Cras ac leo purus. Mauris quis diam velit.
+			</p>
+	</section>
+	
+<hr class="clear">
+<h1>2. 나란히 배치 불가한 요소들을 나란히 배치하기</h1>
+	<section id="sec03">
+		<h2>모든 요소에 float: left; 적용</h2>
+		
+		<div>div tag</div>
+		<p>p tag</p>
+		<h4>h4 tag</h4>
+	</section>
+	
+	<section id="sec04">
+		<h2>모든 요소에 float: right; 적용</h2>
+		
+		<div>div tag</div>
+		<p>p tag</p>
+		<h4>h4 tag</h4>
+	</section>
+<hr>
+	<section id="sec05">
+		<h2>3&amp;2 배치 - float과 clear를 활용 </h2>
+		<div> 나란히 배치할 요소들은 float시키고 float의 영향을 받아서 
+			위로 밀고 올라온 요소를 제자리로 보내기 위해 clear시킨다.
+			(clear는 float의 영향을 끊어 줌.)
+		</div>
+			<p class="p1">[p1]
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus imperdiet, nulla et dictum interdum, 
+				nisi lorem egestas odio, vitae scelerisque enim ligula 
+				venenatis dolor. Maecenas nisl est, ultrices nec congue 
+				eget, auctor vitae massa. Fusce luctus vestibulum augue 
+				ut aliquet. 
+			</p>
+			<p class="p2">[p2]
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus imperdiet, nulla et dictum interdum, 
+				nisi lorem egestas odio, vitae scelerisque enim ligula 
+				venenatis dolor. Maecenas nisl est, ultrices nec congue 
+				eget, auctor vitae massa. Fusce luctus vestibulum augue 
+				ut aliquet. 
+			</p>
+			<p class="p3">[p3]
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus imperdiet, nulla et dictum interdum, 
+				nisi lorem egestas odio, vitae scelerisque enim ligula 
+				venenatis dolor. Maecenas nisl est, ultrices nec congue 
+				eget, auctor vitae massa. Fusce luctus vestibulum augue 
+				ut aliquet. 
+			</p>
+			<div class="clear"></div>
+			<p class="p4">[p4]
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus imperdiet, nulla et dictum interdum, 
+				nisi lorem egestas odio, vitae scelerisque enim ligula 
+				venenatis dolor. Maecenas nisl est, ultrices nec congue 
+				eget, auctor vitae massa. Fusce luctus vestibulum augue 
+				ut aliquet. 
+			</p>
+			<p class="p5">[p5]
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus imperdiet, nulla et dictum interdum, 
+				nisi lorem egestas odio, vitae scelerisque enim ligula 
+				venenatis dolor. Maecenas nisl est, ultrices nec congue 
+				eget, auctor vitae massa. Fusce luctus vestibulum augue 
+				ut aliquet. 
+			</p>
+			<div class="clear"></div>
+			<p class="p6">[p6]
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus imperdiet, nulla et dictum interdum, 
+				nisi lorem egestas odio, vitae scelerisque enim ligula 
+				venenatis dolor. Maecenas nisl est, ultrices nec congue 
+				eget, auctor vitae massa. Fusce luctus vestibulum augue 
+				ut aliquet. 
+			</p>
+	</section>
+</body>
+</html>

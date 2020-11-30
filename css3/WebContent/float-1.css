@@ -1,0 +1,119 @@
+@charset "UTF-8";
+ 
+* {margin: 0; padding: 0; /* css초기화 */} 
+ 
+header {height: 300px;
+background-color: #eee;}
+
+#logo, #login-box {border: 1px solid green;}
+
+#logo {float: left; 
+ margin-left: 50px;
+ margin-top: 30px; }
+ 
+#login-box {float: right;
+ margin:30px 20px 150px 0; }
+ 
+#login-box button {
+ width: 80%; height: 30px;	
+ margin: 8px 0 10px 18%;}
+
+header>nav {margin-left: 50px;}
+
+header ul {border: 1px solid olive;
+overflow: hidden; /* 자식들이 모두 float으로 빠져나간 경우
+형태유지(높이)가 필요한 부모의 설정 */
+list-style: none;/* 목록 앞의 모양 제거 */ }
+
+header li {border: 1px solid red;
+width: 150px; height:50px;
+float: left ;/* 메뉴 하나하나를 가로로 배치 */
+text-align: center; /* 수평 중앙으로 */
+line-height:50px; /* 행간값=높이값 하여 수직 중앙으로 */}
+
+header a {text-decoration: none;
+  /* 링크 걸린 글자 밑줄 제거 */}
+
+header a:link, header a:visited {
+	color: #333; } 
+header a:hover, header a:active {
+	color: #900; } 	
+	
+
+
+
+
+aside {border: 1px solid orange;
+ height: 600px;}
+ 
+#as-l {width: 15%;
+ background-color: skyblue;
+ clear: both;
+ }
+#as-r {width: 10%;
+ background-color: gold;}
+
+article {border: 1px solid blue;
+ width: 70%;
+ height: 600px;} 
+ 
+article>div {border: 1px solid skyblue;} 
+
+#cont01, #cont05 {height: 150px;
+width:90%;
+margin: 30px auto;}
+#cont02, #cont03, #cont04 {
+height: 120px; width:30%;
+float: left;
+margin-left:1.5%; }
+
+#cont05 {
+margin-top: 180px;}
+ 
+ 
+ 
+
+#as-l, article {float: left;}
+#as-r {float: right;}
+
+footer {border: 1px solid red;
+  clear: both;
+  overflow: hidden;}
+	
+/* 우측 가로 메뉴바 */
+
+footer ul {border: 1px solid green;
+ float: right;
+ list-style: none;
+ margin-right: 20px;}
+
+footer li {background-color: orange;
+float: left; 
+margin-left: 10px;
+width: 100px; height: 30px;
+text-align: center;
+line-height: 30px;}
+
+footer li:hover {background-color:brown;
+transition:1.3s;/* n초동안 변화(간단 애니효과) */}
+
+footer li>a {border: 1px solid red;
+padding: 4px 12px;
+text-decoration: none;}
+
+footer li>a:link, footer li>a:visited {
+	color:brown; }
+footer li>a:hover, footer li>a:active {
+	color:orange;
+	transition:1.5s; }
+
+.clear {clear: both;}
+
+ /* 3. 중앙에 위치하는 메뉴 구성 */
+footer nav#s-nav {border: 1px solid violet; }
+
+footer nav#s-nav>ul {
+	float: none;
+	margin: 50px auto; /* 여백을 활용해 중앙에 위치 */
+	width: 450px; /* 여백적용이 되게 크기 조절  */
+} 

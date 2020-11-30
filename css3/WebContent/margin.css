@@ -19,3 +19,39 @@
 	background-color: #ee6000;
 	margin: 0 50px 100px 300px;
 }
+
+/* margin-t/r/b/l*/
+.mt,.mr,.mb,.ml {
+	border: 1px solid;
+	color: #092;
+}
+.mt {
+	margin-top: 30px;
+}
+.mr {
+	margin-right: 500px; 
+}
+.mb {
+	margin-bottom: 50px;
+}
+.ml {
+	margin-left: 200px;
+}
+
+#login-box {
+	border: 1px solid red;
+	margin-left: 200px;
+	margin-top: 100px;
+	width: 350px;
+}
+#login-box>input {
+	width: 250px;
+}
+
+label {/* border: 1px solid red */}
+.la-id { padding-left: 50px; }
+.btn {
+	margin-left: 73px;
+	margin-top: 10px;
+	width: 250px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<link href="style.css" rel="stylesheet">
+<link href="overflow.css" rel="stylesheet">
+</head>
+<body>
+<h1>overflow - 영역 밖의 컨텐츠 처리법</h1>
+
+ <ul>
+  <li>overflow:visible; 영역 밖의 컨텐츠 보임</li>
+  <li>overflow:hidden; 영역 밖의 컨텐츠 숨김</li>
+  <li>overflow:scroll; 영역 밖의 컨텐츠를 항상 스크롤바로</li>
+  <li>overflow:auto; 영역 밖의 컨텐츠를 필요에 따라  스크롤바로</li>
+ </ul>
+
+
+ <ol id="over">
+  <li class="vis">overflow:visible; 영역 밖의 컨텐츠 보임<br>
+   <br><img alt="iphone" src="img/iphone.jpg"><br>	  
+	overflow:visible; 영역 밖의 컨텐츠 보임<br>
+	overflow:visible; 영역 밖의 컨텐츠 보임<br>
+  </li>
+  <li class="hid">overflow:hidden; 영역 밖의 컨텐츠 숨김<br>
+   <br><img alt="iphone" src="img/iphone.jpg"><br>	  
+	overflow:hidden; 영역 밖의 컨텐츠 숨김<br>
+	overflow:hidden; 영역 밖의 컨텐츠 숨김<br>
+  </li>
+  <li class="scr">overflow:scroll; 영역 밖의 컨텐츠를 항상 스크롤바로<br>
+   <br><img alt="iphone" src="img/iphone.jpg"><br>	  
+	overflow:scroll; 영역 밖의 컨텐츠를 항상 스크롤바로<br>
+	overflow:scroll; 영역 밖의 컨텐츠를 항상 스크롤바로<br>
+  </li>
+  <li class="aut">overflow:auto; 영역 밖의 컨텐츠를 필요에 따라  스크롤바로<br>
+   <br><img alt="iphone" src="img/iphone.jpg"><br>	  
+	overflow:auto; 영역 밖의 컨텐츠를 필요에 따라  스크롤바로<br>
+	overflow:auto; 영역 밖의 컨텐츠를 필요에 따라  스크롤바로<br>
+  </li>
+ </ol>
+ 
+<hr>
+<h3>말줄임표 나타내기(말줄임표 삼총사)</h3>
+ <ol>
+  <li>white-space:nowrap; 공백 처리 - 자동줄바꿈 금지</li>
+  <li>overflow:hidden; 영역 밖의 내용 처리 - 숨김</li>
+  <li>text-overflow:ellipsis;영역 밖의 글자 처리 - 말줄임표(...)</li>
+ </ol>
+
+<div class="el">영역을 넘친 내용은 style 속성으로 
+  말줄임표 나타내는 방법 
+  [white-space:nowrap; overflow:hidden; text-overflow:ellipsis;]
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

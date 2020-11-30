@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+header * {margin: 0; padding: 0;}
+
+nav {border: 1px solid orange;
+ margin-top: 50px;}
+
+nav ul {border: 1px solid olive;
+ list-style: none;}
+
+nav li {border: 1px solid red;
+ display: inline-block;
+ vertical-align: top;
+ width: 150px; height: 30px;
+ text-align: center;
+ line-height: 30px; }
+
+nav a {background-color:  red;
+ width: 150px; height: 30px;
+ display: block;
+ text-decoration: none;	}
+ 
+nav a:link, nav a:visited {color: #fff;} 
+nav a:hover, nav a:active {color: #ff0;} 
+ 
+.sub {display: none;}
+.mn04:hover>.sub {display: block;}
+
+#box {background-color: #ccc;
+ border-radius: 30px 0;
+ width: 600px;
+ margin: 4em auto;
+ padding: 2em;
+ color: #355;
+ font-weight: bold;
+ line-height: 1.8;}
+
+
+
+/* display:inline; */
+#sec01 .block {border: 1px solid red;
+ width: 500px;  height: 30px;	
+ margin: 50px;}
+ 
+#sec01:hover .block {
+ display: inline; }
+ 
+ 
+/* display:block; */
+#sec02>*:not(h2) {border: 1px solid blue;
+ width: 500px;  height: 30px;	
+ margin: 50px; }
+
+
+#sec02:hover>*:not(h2) {
+ display: block;}
+
+
+
+ /* display:inline-block; */
+
+#sec03>*:not(h2) {
+border: 1px solid green;
+width: 500px;  height: 40px;
+margin: 50px;	
+display: inline-block; }
+
+
+ /* display:none; */
+
+#sec04>*:not(h2) {
+border: 3px solid pink;	}
+
+.none {display: none;}
+
+#sec04:hover>div.none {
+ display: block; }
+
+#sec04:hover>b.none {
+ display: inline; }
+
+
+.p-02 {border: 1px solid !important;
+ background-color: #ccc;	
+ margin: 0;
+ padding: 1em;
+ color: #555;
+ display: none; }
+
+.div02:hover+.p-02 {
+ /* 형제관계의 A와 B.
+1. A+B 는 
+   A의 뒤에 오는 형제관계 B 중 처음 하나만 불러옴.
+2. A~B 는
+   A의 뒤에 오는 형제관계 B 모두를 불러옴.
+ */	
+ display: block;	}
+
+
+b.none:hover+b {
+ display: none; }
+
+
+ /* visibility:hidden; */
+
+#sec04, #sec05 {display: inline-block;
+width: 43%;
+vertical-align: top;}
+
+#sec05>*:not(h2) {
+border: 3px solid olive;	}
+
+.hid {visibility: hidden;}
+#sec05:hover>.hid {
+	visibility: visible;
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

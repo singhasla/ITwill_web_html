@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display</title>
+<link href="style.css" rel="stylesheet">
+<link href="display.css" rel="stylesheet">
+</head>
+<body>
+<header>
+ <h1>display</h1>
+ <nav>
+  <ul>
+   <li><a href="#sec01">sec01</a></li>
+   <li><a href="#sec02">sec02</a></li>
+   <li><a href="#sec03">sec03</a></li>
+   <li class="mn04"><a href="#sec04">sec04</a>
+     <div class="sub">
+      <a href="#sec05">sec05</a>
+     </div> 
+   </li>
+  </ul>
+ </nav>
+</header>
+
+<div id="box">
+ <ul>
+  <li>display:inline; block인 tag를 inline으로 바꾸기</li>
+  <li>display:block; inline인 tag를 block으로 바꾸기</li>
+  <li>display:inline-block; 
+                                   어떤 tag나 inline과 block을 합친 성격으로 바꾸기 </li>
+  <li>display:none;</li>
+ </ul>
+</div>
+<section id="sec01">
+ <h2>display:inline; (한 줄에 나란히 오며 크기와 상하 margin 적용 불가)</h2>
+ 
+ <p class="block">p tag에 display:inline;적용 </p>
+ <div class="block">div tag에 display:inline;적용</div>
+ <h4 class="block">hn tag에 display:inline;적용</h4>
+ <footer class="block">footer tag에 display:inline;적용</footer>
+ <ol class="block">
+  <li class="block">ol, li tag에 display:inline;적용</li>
+  <li class="block">ol, li</li>
+ </ol>
+</section>
+
+<section id="sec02">
+ <h2>display:block; 
+ (한 줄에 나란히 올 수 없고 크기와 margin 모두 적용)</h2>
+ 
+ <a>a tag에 display:block;적용</a>
+ <b>b tag에 display:block;적용</b>
+ <i>i tag에 display:block;적용</i>
+ <span>span tag에 display:block;적용</span>
+ <label>label tag에 display:block;적용</label>
+</section>
+
+<section id="sec03">
+ <h2>display:inline-block;</h2>
+ 
+ <p class="block">
+ p tag에 display:inline-block;적용 </p>
+ <div class="block">
+ div tag에 display:inline-block;적용</div>
+ <h4 class="block">
+ hn tag에 display:inline-block;적용</h4>
+ 
+ <a>a tag에 display:inline-block;적용</a>
+ <span>span tag에 display:inline-block;적용
+ </span>
+ <label>label tag에 
+ display:inline-block;적용</label>
+</section>
+
+<section id="sec04">
+ <h2>display:none;으로 요소 사라지기  <small>(공간도 사라짐)</small></h2>
+
+ <div class="none">div-01</div>
+ <div class="div02">div-02</div>
+  <p class="p-02">
+   display: none; 으로 숨겼다가 <br>
+   display: block; 으로 다시 보이게..
+  </p>
+ <div>div-03</div>
+
+ <b>b-01</b> <b class="none">b-02</b> <b>b-03</b>  
+</section>
+
+<section id="sec05">
+ <h2>visibility:hidden;으로 요소 사라지기  <small>(공간은 남김)</small></h2>
+
+ <div class="hid">div-01</div>
+ <div class="div02">div-02</div>
+ <div>div-03</div>
+
+ <b>b-01</b>
+ <b class="hid">b-02</b>
+ <b>b-03</b>  
+</section>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
