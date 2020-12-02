@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="style.css" rel="stylesheet">
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+<h1>position:  ; 요소의 위치 지정법</h1>
+<ul>
+ <li>position:static;(기본값) 위치 이동 불가</li>
+ <li>position:relative; 최종 위치에서 ~방향으로 ~이동</li>
+ <li>position:absolute; 상위요소의 경계를 기준으로 ~거리 지정</li>
+ <li>position:fixed; 브라우저를 기준으로 ~거리에 고정</li>
+ <li>position:sticky; relative와 fixed의 믹스.
+  특정 지점에서 고정됨</li>
+</ul>
+
+<section id="sec04">
+ <h2>position:sticky;</h2>
+
+ <div>position:sticky; </div>
+</section>
+
+<section id="sec01">
+ <h2>position:static; (기본값)</h2>
+
+ <div class="st">position:static; </div>
+</section>
+
+<section id="sec02">
+ <h2>position:relative;</h2>
+
+ <div class="re01">position:relative; left: 500px;</div>
+ <div class="re02">position:relative; top: 300px;</div>
+ <div class="re03">position:relative; right: 500px;</div>
+ <div class="re04">position:relative; bottom: 300px;</div>
+ <div class="re05">position:relative; left: 700px; bottom: 200px;</div>
+ <div class="re06">position:relative; left: -300px; top:-30px;</div>
+</section>
+
+<section id="sec03">
+ <h2>position:absolute;</h2>
+
+ <div class="ab01">position:absolute; left: 0; top: 0;</div>
+ <div class="ab02">position:absolute; right: 0; bottom: 0;</div>
+ <div class="ab03">position:absolute; right: 0; top: 0;</div>
+ <div class="ab04">position:absolute; left: 0; bottom: 0;</div>
+ <div class="ab05">position:absolute; top:200px; right: 600px;</div>
+ <div class="ab06">position:absolute; top:100%; left: 100%;</div>
+</section>
+
+<div id="quick">
+ <nav>
+  <a href="#sec01">sec01</a>
+  <a href="#sec02">sec02</a>
+  <a href="#sec03">sec03</a>
+  <a href="#">top</a>
+ </nav>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+

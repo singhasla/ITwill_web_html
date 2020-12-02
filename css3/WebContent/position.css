@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+.st {position: static;
+ left: 500px;}
+
+/* position:relative; */
+#sec02>div {border: 1px solid;
+width: 300px;}
+
+.re01 {position: relative;
+ left: 500px;}
+.re02 {position: relative;
+ top: 300px;}
+.re03 {position: relative;
+ right: 500px;}
+.re04 {position: relative;
+ bottom: 300px;}
+.re05 {position: relative;
+ left: 700px; bottom: 200px;}
+
+.re06 {position: relative;
+left: 0; top:0;}
+	
+#sec02:hover>.re06 {
+left:-300px; top:-30px;
+transition:2s;}
+
+
+ /* position:absolute; */
+
+#sec03>div {
+background-color: #0cf;
+width: 300px; height: 50px; }
+
+#sec03 {position: relative;
+height: 500px;
+}
+
+.ab01 {position: absolute;
+ left: 0; top: 0;}
+.ab02 {position: absolute;
+ right: 0; bottom: 0;}
+.ab03 {position: absolute;
+ right: 0; top: 0;}
+.ab04 {position: absolute;
+  left: 0; bottom: 0;}
+  
+#sec03:hover>.ab05 {
+ position: absolute;
+ top:200px; right: 600px; }
+
+.ab06 {position: absolute;
+ top:100%; left: 100%;}
+
+
+/* position:fixed */
+#quick {
+ background-color: #ccc;
+ width: 100px; height: 150px; 	
+ position: fixed;
+ right: -80px; bottom: 100px; 
+}
+
+#quick:hover {
+ right: 0; bottom: 100px;
+ transition:1s; 	}
+
+#quick a {
+background-color: #000;
+display: block;
+width:90px; height:30px;
+margin: 6px auto 0 auto;
+color: #fff;
+text-transform: capitalize;
+text-decoration: none;
+text-align: center;
+line-height:30px; 
+letter-spacing:0.1em;
+position: relative;
+left: 0;}
+
+#quick a:hover {
+background-color: #fdf;
+color: #000;
+left: -6px; 
+transition:0.8s; }
+
+#quick a:nth-of-type(4) {
+text-transform: uppercase;	
+}
+
+
+ /* position:sticky; */
+
+#sec04 {position: sticky;
+top: 0px; 
+background-color: #fa0;
+z-index: 9999;
+/* 겹치는 요소끼리의 위아래 순서
+값이 클수록 위로 올라옴
+(음수값 가능) */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
