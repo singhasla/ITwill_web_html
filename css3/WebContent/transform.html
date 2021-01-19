@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform</title>
+<link href="style.css" rel="stylesheet">
+<link href="transform.css" rel="stylesheet">
+</head>
+<body>
+<h1>transform - 변형</h1>
+
+<h2>변형 함수들</h2>
+ <aside>
+ <h3>변형 함수 2개 이상 적용</h3>
+  <div class="tr-ro">translate rotate</div>
+  <div class="ro-tr">rotate translate</div>
+ </aside> 
+<ul style="white-space: pre;">
+ <li>transform:translate(Xn,Yn); 
+   위치를 X방향으로 n만큼, Y방향으로 n만큼 변형.
+  n은 음수값도 가능. (단위는 px/%/em/등등...) </li>
+ <li>transform:scaleX(n);
+    크기를 X방향으로 변형.
+  (n은 1보다 작으면 축소, 크면 확대 됨) </li>
+ <li>transform:scaleY(n);
+    크기를 Y방향으로 변형.  </li>
+ <li>transform:scale(n,n);
+      크기를 X방향 Y방향으로 동시에 변형. </li>
+ <li>transform:rotateX(n); 가로축을 기준으로 회전 변형.
+    (단위는 deg, 음수값 가능)<br>
+    transform:rotateY(n); 세로축을 기준으로 회전 변형.<br>
+    transform:rotate(n); (바람개비처럼 정면에서 보이는) 회전 변형.
+ </li>
+ <li>transform:skewX(n); 가로축을 기준으로 기울기 변형.
+     (단위는 deg, 음수값 가능)<br>
+     transform:skewY(n); 세로축을 기준으로 기울기 변형.<br>
+     transform:skew(n,n); 가로,세로축을 기준으로 동시에 기울기 변형.</li>
+</ul>
+
+<h2>transform-origin: n,n ; 변형의 기준점 변경 (기본값은 정중앙임)</h2>
+ <p>
+  가로 세로의 순서로 적용.<br>
+  방향값을 조합하거나  - left/center/right top/center/bottom <br>
+  다양한 단위를 붙여 직접값을 지정 -  npx npx / n% n% / nem nem / ...
+ </p>
+ 
+<section id="sec01">
+ <h2>transform:translate(); 위치 변형</h2>
+ 
+ <div class="trans01">transform:translate(800px,0);</div>
+ <div class="trans02">transform:translate(0,800px);</div> 
+ <div class="trans03">transform:translate(-200px,0);</div>
+ <div class="trans04">transform:translate(0,-400px);</div> 
+ <div class="trans05">transform:translate(900px,-300px);</div>
+ <div class="trans06">transform:translate(40em,10em);</div> 
+ <div class="trans07">transform:translate(100%,100%);</div>
+ <div class="trans08">transform:translate( );
+  단위가 %일 경우 자신의 크기가 기준.
+ </div> 
+ 
+ <aside><b>항상 부모의 center에 위치하기</b>
+  [부모의 설정] position: relative;
+  [자식의 설정]
+    position: absolute;
+    left: 50%; top:50%;
+   - 부모의 정중앙에서 자식의 시작점이 위치함
+       (크기가 클수록 중앙에서 벗어남)
+    transform:translate(-50%,-50%);
+   - 자식의(자신의) 크기 절반만큼 
+        위와 앞으로 이동시켜
+        정중앙을 위치를 완성. 
+ </aside>
+
+ <p style="white-space: pre;background-color: #000; color: #fff;">
+   요소에 <b>★ box-sizing: border-box; ★</b>를 지정하면
+  padding값과 border를 추가해도 요소의 크기가 더이상 커지지 않는다.
+   ( 기본값 content-box는 
+              width와 height안에 padding과 border를 포함하지 않음)
+ </p>
+</section>
+
+
+<section id="sec02">
+ <h2>transform:scale(); 크기 변형</h2>
+ 
+ <div class="sca01"> transform:scaleX(0.5);<br>
+  <img alt="iphone" src="img/iphone.jpg">
+ </div>
+ <div class="sca02">transform:scaleX(2);<br> 
+  <img alt="iphone" src="img/iphone.jpg">
+ </div>
+ <div class="sca03">transform:scaleY(0.4);<br>
+  <img alt="iphone" src="img/iphone.jpg">
+ </div>
+ <div class="sca04">transform:scaleY(2.4);<br>
+  <img alt="iphone" src="img/iphone.jpg">
+ </div>
+ <div class="sca05">transform:scale(2,2);<br>
+  <img alt="iphone" src="img/iphone.jpg">
+ </div>
+ <div class="sca06">transform:scale(2,2.5);<br>
+  <img alt="iphone" src="img/iphone.jpg">
+ </div>
+</section>
+
+<section id="sec03">
+ <h2>transform:rotate(); 회전 변형</h2>
+ <!-- 예제 회전부터~~~ -->
+ <div class="rot01">transform:rotateX(90deg);
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="rot02">transform:rotateY(90deg);<br>
+  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="rot03">transform:rotateX(-60deg);<br>
+  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="rot04">transform:rotateY(-180deg);<br>
+  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="rot05">transform:rotate(360deg);<br>
+  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="rot06"> transform:rotate(-460deg);<br>
+  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="rot07">
+ <span>transform:rotateX(-720deg);</span><br>
+  <img alt="car" src="img/car.jpg">
+ </div>
+</section>
+
+<section id="sec04">
+ <h2>transform:skew();</h2>
+ <div class="sk01">transform:skewX(20deg);
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="sk02">transform:skewX(-20deg);
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="sk03">transform:skewY(40deg);
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="sk04">transform:skewY(-40deg);
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="sk05">transform:skew(30deg,30deg);
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="sk06">transform:skew( );
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+</section>
+
+<section id="sec05">
+ <h2>transform-origin: n n ; 변형의 기준점 변경</h2>
+ <div class="sc01">transform-origin:left 0; 
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="sc02">transform-origin:100% 0; 
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="sc03">transform-origin:left top; 
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="sc04">transform-origin:left 100%; 
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="ro05">transform-origin:122px 150px; 	 
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+ <div class="ro06"> transform-origin:100% 0;
+  <br>  <img alt="car" src="img/car.jpg">
+ </div>
+</section>
+
+</body>
+</html>
+
+
+

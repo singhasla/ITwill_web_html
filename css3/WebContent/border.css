@@ -1,0 +1,28 @@
+@charset "UTF-8";
+#ol02>li {margin: 1em;
+padding: 0.5em;}
+
+#ol02>li:nth-of-type(1) {
+ border: 8px solid #ccc; }
+#ol02>li:nth-of-type(2) {
+ border: 8px dashed #ccc; }
+#ol02>li:nth-of-type(3) {
+ border: 8px dotted #ccc; }
+#ol02>li:nth-of-type(4) {
+ border: 8px double #ccc; }
+#ol02>li:nth-of-type(5) {
+ border: 8px groove #ccc; }
+#ol02>li:nth-of-type(6) {
+ border: 8px ridge #ccc; }
+#ol02>li:nth-of-type(7) {
+ border: 8px inset #ccc; }
+#ol02>li:nth-of-type(8) {
+ border: 8px outset #ccc; }
+
+
+
+
+
+
+
+

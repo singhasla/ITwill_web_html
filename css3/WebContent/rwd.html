@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--viewport  -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rwd</title>
+<link href="rwd.css" rel="stylesheet">
+</head>
+<body>
+<h1>반응형 웹 디자인</h1>
+<p>모바일 퍼스트 - 제일 작은 화면 사이즈를 기본으로 먼저 작업.</p> 
+
+<h2>viewport설정하기</h2>
+<p>
+head안에  <br>
+&lt;meta name="viewport" content="width=device-width,
+ initial-scale=1.0"&gt;
+</p>
+
+<aside>
+ <a href="https://mediaqueri.es/" target="_blank">
+https://mediaqueri.es/ 다양한 미디어 쿼리 예시 사이트</a>
+</aside>
+
+<h2>미디어 쿼리 구문</h2>
+<p class="pre">
+ @media only|not 장치종류 and ( 조건 ) { 
+  
+   css선택자  { 속성: 속성값 ;}
+ 
+ }
+ 
+       * only나 not은 필요한 경우에만 사용
+</p>
+
+<section class="sec">
+ <h3>장치종류</h3>
+ <ul>
+  <li>all - 모든 디바이스</li>	
+  <li>print - 프린터</li>		
+  <li>screen - screen형태로 나타나는 모든 computer
+     (tablets, smart-phones etc.)</li>
+  <li>speech - 음성낭독기</li>	
+ </ul>
+</section>
+
+<section class="sec">
+ <h3>기타 다른 조건들...</h3>
+ <ul>
+  <li>width and height of the viewport - 뷰포트의 너비와 높이</li>
+  <li>width and height of the device - 장치의 너비와 높이</li>
+  <li>orientation (landscape or portrait) - 가로 또는 세로 방향</li>
+  <li>resolution - 해상도</li>
+ </ul>
+</section>
+
+<h4>너비마다 다른 이미지 - picture/source 태그</h4>
+
+<pre>
+&lt;picture&gt;
+  &lt;source srcset="small이미지" media="(min-width:npx / max-width:npx)"&gt;
+  &lt;source srcset="이미지"&gt;
+  &lt;img src="이미지"&gt;   =========== picture나 source태그 지원불가한 브라우저용
+&lt;/picture&gt;
+</pre>
+
+<picture>
+ <source srcset="img/car.jpg" media="(max-width:700px)">
+ <source srcset="img/daisies.jpg" media="(max-width:760px)">
+ <source srcset="img/question.jpg">
+ <img src="img/question.jpg">
+</picture>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

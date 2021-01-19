@@ -1,0 +1,43 @@
+@charset "UTF-8";
+ 
+/*  css초기화 작업시 추가 가능
+* {margin: 0; padding: 0;  
+ box-sizing: border-box; }
+  */
+
+div {border: 1px solid;
+width: 500px; height: 300px;
+padding: 1em;}
+
+div:first-line {
+/* A:first-line 요소의 첫 줄을 불러오는 선택자 */
+font-size: 2em;
+line-height: 2;}
+
+#cont {background-color: #afc;
+ box-sizing: content-box;}
+#bord {background-color: #8cf;
+ box-sizing: border-box;}
+
+#bord:first-line {
+	color: #a20; }
+
+section {border:1px solid;
+	width: 900px; height:400px;
+	padding: 0;}
+
+section>p {border:1px solid red;
+margin: 0; padding:1em;
+width: 300px; height:400px;
+display: inline-block;
+box-sizing: border-box;}
+
+
+
+
+
+
+
+
+
+

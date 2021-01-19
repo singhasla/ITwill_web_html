@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+<link href="style.css" rel="stylesheet">
+<link href="transition.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="da-box">transition 
+ <span>- 단순한 애니메이션 효과</span> </h1>
+
+<ul>
+ <li>transition-duration (필수) 전체 진행 시간</li>
+ <li>transition-property 효과를 줄 속성명</li>
+ <li>transition-delay 지연 시간</li>
+ <li class="li04"> transition-timing-function 가속감속 등
+  <ol class="ttf">
+   <li>ease (기본값 ) = 느리게 시작하고 빨라지다가 천천히 종료하는 효과</li>
+   <li>ease-in = 느리게 시작하는 효과</li>
+   <li>ease-out = 느리게 끝나는 효과</li>
+   <li>ease-in-out = 느리게 시작하고 느리게 끝나는효과</li>
+   <li>linear = 동일한 속도 </li>
+   <li>cubic-bezier(n,n,n,n) = cubic-bezier 함수값으로 적용 <br>
+    <a href="https://cubic-bezier.com/" target="_blank">
+      https://cubic-bezier.com/</a>
+   </li>
+  </ol>
+ </li>
+ 
+</ul>
+
+<h3>transition-property (효과를 줄 속성)</h3>
+<div class="ball pro">ball</div>
+
+<section id="sec01">
+<h3>transition-delay (지연 시간)</h3>
+ <div class="ball del1">ball-1</div>
+ <div class="ball del2">ball-2</div>
+ <div class="ball del3">ball-3</div>
+ <div class="ball del4">ball-4</div>
+ <div class="ball del5">ball-5</div>
+</section>
+
+<section id="sec02">
+<h3>transition-timing-function 가속감속</h3>
+ <div class="box tm01">box-1 [ease]</div>
+ <div class="box tm02">box-2 [ease-in]</div>
+ <div class="box tm03">box-3 [ease-out]</div>
+ <div class="box tm04">box-4 [ease-in-out]</div>
+ <div class="box tm05">box-5 [linear]</div>
+ <div class="box tm06">box-6 [cubic-bezier(.17,.67,.83,.67)]</div>
+ <div class="box tm07">box-7 [cubic-bezier(.72,1.92,.59,-1.56)]</div>
+</section>
+
+
+
+
+
+</body>
+</html>
+
+
+
+

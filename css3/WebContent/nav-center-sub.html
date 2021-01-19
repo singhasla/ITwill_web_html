@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>서브까지 항상 중앙에 위치하는 메뉴</title>
+<style type="text/css">
+nav {height: 50px;} 
+ 
+nav * {
+margin: 0; padding: 0;
+box-sizing: border-box;
+list-style:  none;
+text-align: center;}
+
+nav>ul {
+width:482px;
+margin: 20px auto;}
+
+nav>ul>li {border: 1px solid red;
+width:120px; height:30px;
+line-height:30px;
+float: left;
+position: relative;}
+
+nav>ul>li:hover>.sub {display: block;}
+
+.sub {border: 1px solid brown;
+display: none;
+white-space: nowrap; /* 자동 줄바꿈 금지 */
+position: absolute;  
+left:50%; top:30px;
+transform:translateX(-50%);}
+
+.sub>li {display: inline-block;}
+
+
+h1 {
+clear: both;
+margin-top: 100px;
+text-align: center;}
+
+</style>
+</head>
+<body>
+<nav>
+ <ul>
+  <li><a href="#sec01">section1</a>
+   <div class="sub">
+    <a href="#">sec1-1</a>
+    <a href="#">sec1-2</a>
+    <a href="#">sec1-3</a>
+   </div>  
+  </li>
+  <li><a href="#sec02">section2</a>
+   <ul class="sub">
+    <li><a href="#">section2-1</a></li>
+    <li><a href="#">section2-2</a></li>
+    <li><a href="#">section2-3</a></li>
+    <li><a href="#">section2-4</a></li>
+   </ul>
+  </li>
+  <li><a href="#sec03">section3</a></li>
+  <li><a href="#sec04">section4</a></li>
+ </ul>
+</nav>
+
+
+<h1>서브까지 항상 중앙에 위치하는 메뉴 구현</h1>
+
+</body>
+</html>
+
+
+
+
+
+
+

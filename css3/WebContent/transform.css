@@ -1,0 +1,181 @@
+@charset "UTF-8";
+.tr-ro, .ro-tr {
+width: 150px; height: 30px;
+margin: 200px 300px;}
+
+.tr-ro {background-color: #fa7;	}
+.ro-tr {background-color: #7af; }
+
+aside:hover>.tr-ro {
+transform:translateX(1200px) rotate(1080deg);
+transition: 5s;}
+aside:hover>.ro-tr {
+transform:rotate(1080deg) translateX(1200px);
+transition: 5s;}
+
+
+
+ /* transform:translate(); 위치 변형 */
+ 
+#sec01>div {border-bottom:4px groove #316;  
+background-color: #eaf;
+width: 200px; height: 50px;
+box-sizing: border-box; /* ★요소의 크기계산법 변경★ */}
+
+.trans01 {
+-ms-transform:translate(800px,0);
+/* -ms-는 벤더프리픽스(IE9용) 
+ -o-transform:translate(n,n)
+ -moz-transform:translate(n,n)
+ -webkit-transform:translate(n,n)
+ 처럼 벤더프리픽스를 추가한 소스를 표준소스보다
+ 먼저 기입할 것.
+ (벤더프리픽스는 브라우저접두사.
+ 최신스타일소스를 적용 불가한 구형브라우저 호환용으로 씀.)
+*/	
+transform:translate(800px,0);}
+.trans02 {transform:translate(0,800px);}
+.trans03 {transform:translate(-200px,0);}
+.trans04 {transform:translate(0,-400px);}
+.trans05 {transform:translate(900px,-300px);}
+.trans06 {transform:translate(40em,10em);}
+.trans07 {transform:translate(100%,100%);}
+
+#sec01:hover>div {
+/* 부모에 오버시 모두 원래 자리로 ... */	
+transform:translate(0,0);	
+transition: 2.5s 0.5s ease-out;}
+
+
+
+ /*  ★ 항상 부모의 center에 위치하기 
+           (position과  translate조합) ★ */
+#sec01 {position: relative;
+       /* 1. 자식의 기준이 될 부모의 설정 변경값 */
+height: 700px;}
+
+#sec01>aside {
+white-space: pre;/* 공백처리 그대로 살리기 */
+padding: 1.5em 0 0 1em;	
+width: 400px; height: 300px;	
+box-sizing: border-box;/* 요소의 크기계산법 변경 */
+
+background-color: #7af;
+position: absolute;
+         /* 2. 부모 기준으로 자리할 자식의 설정값 */
+left: 50%; top:50%;
+         /* 3. 좌에서 절반,위에서 절반 위치 */
+transform:translate(-50%,-50%);
+        /* 4. 자신의 크기 절반만큼 위와 앞으로 이동 */}
+
+
+ /* transform:scale(); 크기 변형*/
+#sec02 {overflow: hidden;
+ /* float으로 자식들이 빠져나간 부모의 형태(높이) 되돌리기 */} 
+ 
+#sec02>div {border: 1px solid;
+ width: 200px; 	
+ float: left; /* 자연스럽게 나란히 배치 */
+ margin: 50px; }
+
+#sec02 img { width: 200px;}
+
+#sec02:hover>.sca01 {
+ transform:scaleX(0.5); }
+#sec02:hover>.sca02 {
+ transform:scaleX(2);}
+#sec02:hover>.sca03 {
+transform:scaleY(0.4);}
+#sec02:hover>.sca04 {
+transform:scaleY(2.4);}
+#sec02:hover>.sca05 {
+transform:scale(2,2); }
+#sec02:hover>.sca06 {
+transform:scale(2,2.5);
+transition: 1.5s 0.5s cubic-bezier(.31,2.03,.52,-1.8);
+ /* 0.5초후 1.5동안 서서히 변형됨
+   (탄성 추가 = 사이트 cubic-bezier.com 에서 값 생성) */ }
+
+
+ /* transform:rotate(); 회전 변형 */
+#sec03, #sec04, #sec05 {overflow: hidden;} 
+#sec03>h2:hover {
+transform:rotateX(1080deg);
+	transition: 2s;}
+#sec03>div, #sec04>div, #sec05>div {
+border: 1px solid;
+ width: 250px; 	
+ float: left; /* 자연스럽게 나란히 배치 */
+ margin: 50px; }	
+#sec03 img, #sec04 img , #sec05 img
+ { width: 250px; 	}
+
+#sec03:hover>div, #sec04:hover>div, #sec05:hover>div 
+{transition: 1.5s;}
+	
+#sec03:hover>.rot01 {
+transform:rotateX(90deg);}		
+#sec03:hover>.rot02 {
+transform:rotateY(90deg);}	
+#sec03:hover>.rot03 {
+transform:rotateX(-60deg);}	
+#sec03:hover>.rot04 {
+transform:rotateY(-180deg);}	
+#sec03:hover>.rot05 {
+transform:rotate(360deg);}	
+#sec03:hover>.rot06 {
+transform:rotate(-460deg);}	
+
+#sec03:hover>.rot07>img {
+transform:rotateX(-720deg);
+transition: 1.5s;}		
+#sec03:hover>.rot07>span {
+transform:rotateY(-720deg);
+display: inline-block;
+transition: 1.5s;}	
+	
+	
+	
+	/* transform:skew();  */
+	
+#sec04:hover>.sk01 {
+transform:skewX(20deg);}	
+#sec04:hover>.sk02 {	
+transform:skewX(-20deg);}	
+#sec04:hover>.sk03 {
+transform:skewY(40deg);}	
+#sec04:hover>.sk04 {	
+transform:skewY(-40deg);}
+#sec04:hover>.sk05 {	
+transform:skew(30deg,30deg);}
+	
+	
+
+
+/* transform-origin 변형의 기준점 변경 */
+
+#sec05:hover>.sc01, #sec05:hover>.sc02 {
+ transform:scaleX(0.3);}
+ 
+.sc01 {transform-origin:left 0;}
+.sc02 {transform-origin:100% 0;}		
+
+#sec05:hover>.sc03, #sec05:hover>.sc04 {
+ transform:scaleY(2);}	
+
+.sc03 {transform-origin:left top;}
+.sc04 {transform-origin:left 100%;}	
+	
+#sec05:hover>.ro05, #sec05:hover>.ro06 {	
+	transform:rotate(-720deg);}
+	
+.ro05 {transform-origin:122px 150px; }	
+.ro06 {transform-origin:100% 150px; }	
+	
+	
+	
+	
+	
+	
+
+
