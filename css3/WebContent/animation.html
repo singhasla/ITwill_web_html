@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>animation</title>
+<link href="animation.css" rel="stylesheet">
+</head>
+<body>
+<h1>animation</h1>
+
+<div class="css anicss">css</div>
+
+<h2>1. @keyframes로  애니메이션  정의 하기</h2>
+<pre>
+ 
+@keyframes abc {              --------- abc는 임의의 애니메이션  이름
+
+     0% {속성: 속성값; }	 ------ 0% (= from) 첫장면의 상태 정의
+    
+         ...
+     
+   100% {속성: 속성값; }	 ------ 100% (= to) 끝장면의 상태 정의
+ }
+
+</pre>
+
+
+<h2>2. animation속성으로 정의한 애니메이션을 요소에 적용하기</h2>
+
+<h3>animation의 하위속성들</h3>
+<ol>
+ <li>animation-name: ; 애니메이션  이름</li>
+ <li>animation-duration:ns/nms; 애니메이션  진행시간. 단위는 초나 밀리초</li>
+ <li>animation-delay:ns/nms; 애니메이션  지연시간. 단위는 초나 밀리초</li>
+ <li>animation-iteration-count:n;  애니메이션 반복횟수 (무한반복은 infinite) </li>
+ <li>animation-direction: ; 애니메이션 재생방향
+  <ul>
+   <li>normal-애니메이션이 정상적으로 (앞으로) 재생됩니다.  기본값  0%~100% </li>
+   <li>reverse -애니메이션이 역방향 (역방향)으로 재생됩니다. 100%~0% </li>
+   <li>alternate -애니메이션이 먼저 정방향 재생 된 다음 역방향으로 재생됩니다. 0%~100%~0%</li>
+   <li>alternate-reverse -애니메이션이 먼저 역방향 재생 된 다음 정방향으로 재생됩니다. 100%~0%~100%</li>
+  </ul> 
+ </li>
+ <li>animation-timing-function 애니메이션 가속감속 등 
+  <ul>
+   <li>ease (기본값 ) = 느리게 시작하고 빨라지다가 천천히 종료하는 효과</li>
+   <li>ease-in = 느리게 시작하는 효과</li>
+   <li>ease-out = 느리게 끝나는 효과</li>
+   <li>ease-in-out = 느리게 시작하고 느리게 끝나는효과</li>
+   <li>linear = 동일한 속도 </li>
+   <li>cubic-bezier(n,n,n,n) = cubic-bezier 함수값으로 적용 <br>
+    <a href="https://cubic-bezier.com/" target="_blank">
+      https://cubic-bezier.com/</a>
+   </li>
+  </ul>
+ </li>
+ <li>animation-fill-mode 애니메이션  멈춤시의 장면 지정(다있소 참조)</li>
+ <li><b>animation-play-state:running/paused; 애니메이션  실행/일시 중지</b></li>
+</ol>
+
+<section class="ani-bg">
+<input type="checkbox" id="btn"> <!-- 버튼 작동용 체크박스(숨김) -->
+<label for="btn">animation-play-state: <!-- 버튼 형태의 레이블 -->
+ <b class="run">running</b>/<b class="paus">paused;</b></label>
+ <div class="box anibox">box01</div>
+ <div class="box anibox delay">ani..-delay:1s;</div>
+ <div class="box anibox it-cnt5">ani..-iteration-count:5;</div>
+ <div class="box anibox it-cnt-if">ani..-iteration-count:infinite;</div>
+ <div class="box anibox dir-re">ani..-direction:reverse;</div>
+ <div class="box anibox it-cnt5 dir-alt">ani..-direction: alternate;</div>
+ <div class="box anibox it-cnt5 dir-alt-re">ani..-direction:
+   alternate-reverse;</div>
+ <div class="box anibox ttf-ea1">ani..-timing-function:ease-in;</div>
+ <div class="box anibox ttf-ea2">ani..-timing-function:ease-out;</div>
+ <pre style="background-color: rgba(255,255,255,0.5); font-size: 1.3em;">
+ 
+                  추가 선택자 설명
+  :checked는 체크박스나 라디오버튼이 체크 상태일 때를 지정하는 선택자
+   A~B 는 (A)뒤에 오는 모든 형제관계의 요소(B)를 지정하는 선택자
+   A+B 는 (A)바로 뒤에 오는 하나의 형제관계의 요소(B)를 지정하는 선택자
+   
+ </pre>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+

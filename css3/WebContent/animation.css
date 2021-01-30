@@ -1,0 +1,158 @@
+@charset "UTF-8";
+pre {background-color:#eceeec;
+padding-left:1.5em;
+font-family: sans-serif;}
+
+li {line-height: 1.8;}
+
+ol>li:first-letter /* ~의 첫글자 */ {
+ font-size: 1.2em;
+ color: #a10;	}
+
+.css {background-color:#92B901;
+width: 100px;
+height: 50px;
+border-radius:10px;
+line-height:50px;
+text-align: center; 
+font-size: 2em;
+color: #fff;
+position: relative;}
+
+.anicss {
+animation-name:	move-r ;
+animation-duration:3s;
+}
+
+
+@keyframes move-r {
+	
+ 0% { left:0;  top:0;   }	
+ 
+ 10% {transform:rotate(15deg);}
+	
+ 50% {  left:1000px;  top:-300px;
+  background-color:#0192B9; }	
+  
+100% { left:-1000px;   top:0;
+ transform:rotate(-720deg); }
+}
+
+
+
+
+section {overflow: hidden;/* 영역밖의 컨텐츠 숨김 */
+ width: 1300px; height: 1000px; 	
+ background-repeat: no-repeat;
+ background-size: cover; 
+ background-position: center center;
+ background-image: url("img/car.jpg");}
+
+.box {background-color:#389;
+width: 300px; 
+margin-bottom:30px;
+padding:5px;
+font-size: 1.2em;
+color: #fff;
+position: relative;}
+
+.ani-bg>label {/* 버튼 형태의 레이블 */
+background-color:#520;
+display: block;
+box-sizing:border-box;
+height: 50px;
+margin:30px;
+padding:10px;
+text-align: center;
+font-size: 1.2em;
+color: #fff;}
+
+.ani-bg>label:hover {/* 버튼 형태의 레이블의 오버시 */
+border:5px solid;
+background-color:#fff;
+color: #520;}
+
+  /*   추가 선택자 설명
+  :checked는 체크박스나 라디오버튼이 체크 상태일 때를 지정하는 선택자
+   A~B 는 (A)뒤에 오는 모든 형제관계의 요소(B)를 지정하는 선택자
+   A+B 는 (A)바로 뒤에 오는 하나의 형제관계의 요소(B)를 지정하는 선택자
+   */
+#btn {display: none;} /* 버튼 작동용 체크박스(숨김) */
+#btn:checked+label>.run {visibility: hidden;
+            /* 체크박스 선택시  running글자 사라짐 */} 
+ label>.paus {visibility: hidden;
+            /* 평상시  paused 글자 사라짐 */}  
+#btn:checked+label>.paus {visibility: visible;
+            /* 체크박스 선택시  paused글자 보임 */} 
+            
+#btn:checked~.anibox {animation-play-state:paused;
+       /* 체크박스 선택시  anibox 애니메이션  멈춤 */}
+
+
+.ani-bg {animation:bgimg-ch 20s 4 alternate;}
+.ani-bg:hover {animation-play-state:paused;}
+
+
+@keyframes bgimg-ch {
+ 
+  0% {background-image: url("img/car.jpg"); }	 
+ 18% {background-image: url("img/car.jpg"); }
+ 20% {background-image: url("img/daisies.jpg"); }
+ 38% {background-image: url("img/daisies.jpg"); }
+ 40% {background-image: url("img/flickr.jpg"); }
+ 58% {background-image: url("img/flickr.jpg"); }
+ 60% {background-image: url("img/greenhouse.jpg"); }
+ 78% {background-image: url("img/greenhouse.jpg"); }
+ 80% {background-image: url("img/car.jpg");}
+}
+
+
+
+@keyframes move-box {
+	
+	0% {left:0;}
+  100% {left:1300px;}	
+}
+
+.anibox {animation-name: move-box ;
+ animation-duration: 5s;}
+
+.delay {animation-delay: 1s;}
+
+.it-cnt5 {animation-iteration-count:5;}
+
+.it-cnt-if {animation-iteration-count:infinite;
+ /*  무한반복 */}
+
+.dir-re {animation-direction: reverse;}
+.dir-alt {animation-direction: alternate;}
+.dir-alt-re {animation-direction:alternate-reverse;}
+
+.ttf-ea1 {animation-timing-function:ease-in;}
+.ttf-ea2 {animation-timing-function:ease-out;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
